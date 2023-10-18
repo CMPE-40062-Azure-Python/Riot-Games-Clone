@@ -14,3 +14,12 @@
 //     navbar.style.padding = "25px 20px"; // Adjusted padding
 //   }
 // });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const header = document.querySelector(".header");
+  const content = document.querySelector(".content");
+
+  header.addEventListener("click", function() {
+      content.style.display = content.style.display === "none" ? "block" : "none";
+  });
+});

@@ -121,3 +121,56 @@ body {
   background-position: 50% 0;
   background-size: cover;
 }
+
+@font-face {
+  font-family: 'Mark Pro';
+  src: url('/static/fonts/Mark Pro.woff2') format('woff2'),
+       url('/static/fonts/Mark Pro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.custom-box {
+  width: 97.5%;
+  height: 98px;
+  margin: 20px auto 0;
+  background-color: rgba(240, 240, 240, 0); /* Transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bolder;
+  white-space: pre-wrap;
+  position: relative;
+}
+#showMe {
+  color: rgb(101, 100, 98);
+  margin-right: 10px;
+}
+
+.collapsible-label {
+  color: #ffffff; /* White color */
+}
+
+
+.collapsible-content {
+  display: none;
+}
+
+.collapsible-label:hover {
+  cursor: pointer;
+}
+
+.collapsible-label::after {
+  content: "▼";
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.collapsible-content.active {
+  display: block;
+}
+
+.collapsible-label.active::after {
+  content: "▲";
+}

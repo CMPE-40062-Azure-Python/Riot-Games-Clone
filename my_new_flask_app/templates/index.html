@@ -42,8 +42,24 @@
             <button id="Sign in Button">Sign In</button>
         </div>
     </div>
+    
 
     <div class="explore-hero__filter"></div>
+
+    <div class="custom-box">
+        <span id="showMe" style="color: rgb(101, 100, 98);">Show Me</span>
+        <span class="collapsible-label" onclick="toggleCollapsible()">Everything</span>
+        <div class="collapsible-content" id="collapsibleContent">
+            <!-- Content that you want to be collapsible goes here -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        function toggleCollapsible() {
+            var content = document.getElementById("collapsibleContent");
+            content.classList.toggle("active");
+        }
+    </script>
     
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
