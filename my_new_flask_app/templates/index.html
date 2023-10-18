@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Bar Navigation</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='custom-styles.css') }}"> <!-- Add this line for custom styles -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="top-bar">
@@ -27,15 +29,22 @@
             </div>
         </div>
         <div class="right">
-            <button>Sign In</button>
+            <select id="languages">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <!-- Add more languages as needed -->
+            </select>
             <div class="search-bar">
                 <input type="text" placeholder="Search">
             </div>
-            <div class="collapsible">
-                <img src="web-icon.png" alt="Web Icon">
-            </div>
+            <button id="Sign in Button">Sign In</button>
         </div>
     </div>
+
+    <div class="explore-hero__filter"></div>
+    
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

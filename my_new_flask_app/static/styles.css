@@ -3,15 +3,28 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
 }
-
 .top-bar {
-  background-color: #333;
+  background-color: #111111;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 25px 20px;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
 }
+
+/* scrolling state */
+.top-bar.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 97.4%;
+  padding: 25px 20px;
+  /* scrolling colors */
+  background-color: black;
+  color: white;
+}
+
 
 .left, .right {
   display: flex;
@@ -20,10 +33,15 @@ body {
 
 .logo img {
   height: 40px;
+
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .collapsible {
   margin: 0 10px;
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -43,17 +61,63 @@ body {
   border: none;
   color: #fff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 700;
   text-decoration: underline;
+
 }
+
+.right select,
+.right .search-bar,
+.right button {
+    margin-right: 10px; /* Adjust the value as needed for spacing */
+}
+
 
 .search-bar input {
   padding: 5px;
   border: none;
   border-radius: 5px;
 }
+.language-selector {
+  position: relative;
+}
 
-.collapsible img {
-  width: 30px;
-  height: 30px;
+.language-selector select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+
+.language-selector::before {
+  content: url('globe-icon.png'); /* Replace with your globe icon image path */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust the width as needed */
+}
+/* 
+@media screen and (max-zoom: 150%) {
+    .collapsible:nth-child(n+3),
+    .news,
+    .search-bar {
+        display: none;
+    }
+} */
+
+.explore-hero__filter:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 900px;
+  padding-bottom: 25%;
+  background-image: url('/static/images/explore-hero-bg--large.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-size: cover;
 }
