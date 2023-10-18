@@ -1,0 +1,59 @@
+/* static/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.top-bar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.collapsible {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.circle-btn {
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #333;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.news button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.collapsible img {
+  width: 30px;
+  height: 30px;
+}
