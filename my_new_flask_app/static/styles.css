@@ -171,6 +171,7 @@ body {
     }
 } */
 
+
 .explore-hero__filter:before {
   content: '';
   position: absolute;
@@ -185,6 +186,7 @@ body {
   background-position: 50% 0;
   background-size: cover;
 }
+
 
 @font-face {
   font-family: 'Mark Pro';
@@ -211,30 +213,38 @@ body {
   color: rgb(101, 100, 98);
   margin-right: 10px;
 }
-
 .collapsible-label {
   color: #ffffff; /* White color */
 }
-
-
 .collapsible-content {
   display: none;
 }
-
 .collapsible-label:hover {
   cursor: pointer;
 }
-
 .collapsible-label::after {
-  content: "▼";
+  content: "˅";
   display: inline-block;
+  color: rgb(101, 100, 98);
   margin-left: 5px;
 }
-
 .collapsible-content.active {
   display: block;
 }
-
 .collapsible-label.active::after {
-  content: "▲";
+  content: "˄";
+}
+
+.custom-box-bg {
+  height: 1444.54px;
+  margin-top: 262.5px;
+  background-color: #D8D9D6;
+  position: relative;
+}
+
+.another-custom-box-bg { 
+  height: 2880.36px;
+  background-color: #ffffff;
+  position: relative;
+  margin-top: 1,707.04px;
 }
