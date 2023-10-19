@@ -235,6 +235,38 @@ body {
   content: "˄";
 }
 
+
+/* codes for custom box*/
+.custom-box-responsive {
+  height: 973.2px;
+  width: 1360px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 220px; /* Set the distance from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.responsive-media {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.responsive-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.responsive-media img:hover {
+  transform: scale(1.1);
+}
+
+
+/* codes for custom box bg*/
 .custom-box-bg {
   height: 1444.54px;
   margin-top: 262.5px;
@@ -242,6 +274,7 @@ body {
   position: relative;
 }
 
+/* codes for another custom box bg */
 .another-custom-box-bg { 
   height: 2880.36px;
   background-color: #ffffff;
