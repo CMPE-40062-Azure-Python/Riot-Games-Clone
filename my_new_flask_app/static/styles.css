@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 20px;
+  padding: 17.75px 30px;
   position: relative; /* Add this line */
   z-index: 1; /* Add this line */
 }
@@ -31,9 +31,18 @@ body {
   align-items: center;
 }
 
+/* static/styles.css */
+#RiotGamesName img {
+  width: 150px; /* Adjust this value to change the width of Riot Games Name image */
+}
+
+#RiotGamesLogo img {
+  width: 100px; /* Adjust this value to change the width of Riot Games Logo image */
+}
+
+
 .logo img {
   height: 40px;
-
   font-size: 14px;
   font-weight: 700;
 }
@@ -56,6 +65,48 @@ body {
   cursor: pointer;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #292929;
+  height: 195px;
+  width: 200px;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin: 0 auto;
+  padding: 20px 0; /* Adjust the padding as needed */
+}
+.dropdown-content button {
+  height: 32px;
+  width: 168px;
+  color: #ffffff;
+  background-color: transparent; /* Set background to fully transparent */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+  text-align: left;
+  cursor: pointer; /* Ensure cursor changes on hover */
+  outline: none; /* Remove default outline */
+}
+
+
+.dropdown-content button:hover {
+    background-color: gainsboro; /* Change background color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .news button {
   background-color: transparent;
   border: none;
@@ -63,40 +114,53 @@ body {
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
-  text-decoration: underline;
 
-}
-
-.right select,
-.right .search-bar,
-.right button {
-    margin-right: 10px; /* Adjust the value as needed for spacing */
 }
 
 
 .search-bar input {
-  padding: 5px;
+  height: 22.5px;
+  padding: 5px 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
 }
+
+.right button{
+  height: 22.5px;
+  padding: 5px 10px;
+  display: inline-block; /* This will make the container only take the necessary width */
+  border-radius: 10px;
+  background-color: #f20909;
+  overflow: hidden; /* This will ensure the border radius is applied properly */
+}
+.button-container{
+  height: 22.5px;
+  padding: 5px 10px;
+}
+
+#SignInButton {
+  height: 22.5px;
+}
+
+
 .language-selector {
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.language-selector select {
-  padding: 10px;
-  font-size: 16px;
+.language-selector img {
+  height: 32px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add margin between image and select box */
 }
 
+#languages {
+  height: 32px; /* Adjust the height as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  display: none;
+}
 
-
-.language-selector::before {
-  content: url('globe-icon.png'); /* Replace with your globe icon image path */
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  width: 20px; /* Adjust the width as needed */
+.show {
+  display: block;
 }
 /* 
 @media screen and (max-zoom: 150%) {

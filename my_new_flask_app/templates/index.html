@@ -12,34 +12,54 @@
 <body>
     <div class="top-bar">
         <div class="left">
-            <div class="logo">
-                <img src="logo.png" alt="Riot Games">
+            <div class="logo" id="Riot Games Name" style="margin-right: 15px;">
+                <img src="{{ url_for('static', filename='images/riot games logo test.png') }}" alt="Riot Games Name">
+            </div>            
+            <div class="logo" id="Riot Games Logo" style="margin-right: 30px;">
+                <img src="{{ url_for('static', filename='images/riot games logo.png') }}" alt="Riot Games Logo">
             </div>
-            <div class="collapsible">
-                <button class="circle-btn">+</button>
+            <div class="dropdown" style="margin-right: 30px;" onclick="toggleContent('whoWeAreContent')">
+                <span>WHO WE ARE
+                    <img src="{{ url_for('static', filename='images/collapsible down logo.png') }}" alt="WHO WE ARE DOWN">
+                </span>
+                <div class="dropdown-content">
+                    <button class="dropdown-btn">About Riot</button>
+                    <button class="dropdown-btn">Diversity & Inclusion</button>
+                    <button class="dropdown-btn">Social Impact</button>
+                </div>
             </div>
-            <div class="collapsible">
-                WHO WE ARE
-            </div>
-            <div class="collapsible">
-                WORK WITH US
-            </div>
-            <div class="news">
+            <div class="dropdown" style="margin-right: 30px;">
+                <span>WORK WITH US
+                    <img src="{{ url_for('static', filename='images/collapsible down logo.png') }}" alt="WORK WITH US DOWN">
+                </span>
+                <div class="dropdown-content">   
+                    <button class="dropdown-btn">Jobs</button>
+                    <button class="dropdown-btn">Benefits</button>
+                    <button class="dropdown-btn">Offices</button>
+                    <button class="dropdown-btn">Life At Riot</button>
+                </div>
+            </div>            
+            <div class="news" style="margin-right: 30px;">
                 <button>NEWS</button>
             </div>
         </div>
         <div class="right">
-            <select id="languages">
-                <option value="en">English</option>
-                <option value="es">Spanish</option>
-                <option value="fr">French</option>
-                <option value="de">German</option>
-                <!-- Add more languages as needed -->
-            </select>
-            <div class="search-bar">
+            <div class="language-selector" onclick="toggleLanguages()">
+                <img src="{{ url_for('static', filename='images/language logo.png') }}" alt="Language logo">
+                <select id="languages">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <!-- Add more languages as needed -->
+                </select>
+            </div>     
+            <div class="search-bar" style="margin-right: 5px;">
                 <input type="text" placeholder="Search">
             </div>
-            <button id="Sign in Button">Sign In</button>
+            <div class="button-container">
+                <button id="SignInButton">Sign In</button>
+            </div>
         </div>
     </div>
     
