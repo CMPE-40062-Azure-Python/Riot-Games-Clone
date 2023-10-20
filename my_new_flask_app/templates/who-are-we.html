@@ -84,11 +84,27 @@
       </div>
     </div>
     <main>
-      <div class="text-center">
-        <span>WHO ARE WE?</span>
-        <h1>We Are Rioters</h1>
+      <div class="text-center" style="margin-top: 350px">
+        <video class="video-background" autoplay loop muted>
+          <source
+            src="{{ url_for('static', filename='videos/who-are-we-vid.mp4') }}"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="center-content">
+          <div class="red-box">
+            <span style="color: white; font-size: 15px; margin-bottom: 10px"
+              >WHO ARE WE?</span
+            >
+          </div>
+          <h1 style="color: white; font-size: 75px; margin-top: 40px">
+            We Are Rioters
+          </h1>
+        </div>
       </div>
-      <div class="text-center">
+
+      <div class="text-center" style="margin-top: 1000px">
         <p>We aspire to be the most player-focused game company in the world</p>
         <div>
           <p>
