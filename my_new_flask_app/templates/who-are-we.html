@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who We Are | Riot Games</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='who-we-are.css') }}"
+    />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="left">
+        <div class="logo" id="Riot Games Name" style="margin-right: 15px">
+          <img
+            src="{{ url_for('static', filename='images/riot games logo test.png') }}"
+            alt="Riot Games Name"
+          />
+        </div>
+        <div class="logo" id="Riot Games Logo" style="margin-right: 30px">
+          <img
+            src="{{ url_for('static', filename='images/riot games logo.png') }}"
+            alt="Riot Games Logo"
+          />
+        </div>
+        <div
+          class="dropdown"
+          style="margin-right: 30px"
+          onclick="toggleContent('whoWeAreContent')"
+        >
+          <span>
+            WHO WE ARE
+            <img
+              src="{{ url_for('static', filename='images/collapsible down logo.png') }}"
+              alt="WHO WE ARE DOWN"
+            />
+          </span>
+          <div class="dropdown-content">
+            <button class="dropdown-btn">About Riot</button>
+            <button class="dropdown-btn">Diversity & Inclusion</button>
+            <button class="dropdown-btn">Social Impact</button>
+          </div>
+        </div>
+        <div class="dropdown" style="margin-right: 30px">
+          <span>
+            WORK WITH US
+            <img
+              src="{{ url_for('static', filename='images/collapsible down logo.png') }}"
+              alt="WORK WITH US DOWN"
+            />
+          </span>
+          <div class="dropdown-content">
+            <button class="dropdown-btn">Jobs</button>
+            <button class="dropdown-btn">Benefits</button>
+            <button class="dropdown-btn">Offices</button>
+            <button class="dropdown-btn">Life At Riot</button>
+          </div>
+        </div>
+        <div class="news" style="margin-right: 30px">
+          <button>NEWS</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="language-selector" onclick="toggleLanguages()">
+          <img
+            src="{{ url_for('static', filename='images/language logo.png') }}"
+            alt="Language logo"
+          />
+          <select id="languages">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <!-- Add more languages as needed -->
+          </select>
+        </div>
+        <div class="search-bar" style="margin-right: 5px">
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="button-container">
+          <button id="SignInButton">Sign In</button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="eyebrow eyebrow--xl superhero-feature__eyebrow">
+        <span>Who Are We?</span>
+        <h1
+          class="heading heading--2 heading--light superhero-feature__heading"
+        >
+          We Are Rioters
+        </h1>
+      </div>
+      <div>
+        <p>We aspire to be the most player-focused game company in the world</p>
+        <div>
+          <p>
+            <a href="http://www.riotgames.com/">Riot Games</a> was founded in
+            2006 to develop, publish, and support the most player-focused games
+            in the world. In 2009, we released our debut title,
+            <em><a href="http://leagueoflegends.com/">League of Legends</a></em
+            >, to worldwide acclaim. <em>League</em> has gone on to be the
+            most-played PC game in the world and a key driver of the explosive
+            growth of esports.&nbsp;
+          </p>
+          <p dir="ltr">
+            With <em>League</em> in its second decade, we’re continuing to
+            evolve the game while delivering new experiences to players with
+            <em><a href="http://teamfighttactics.com/">Teamfight Tactics</a></em
+            >,
+            <em><a href="http://playruneterra.com/">Legends of Runeterra</a></em
+            >, <em><a href="http://playvalorant.com/">VALORANT</a></em
+            >,
+            <em
+              ><a href="https://wildrift.leagueoflegends.com/"
+                >League of Legends: Wild Rift</a
+              ></em
+            >, and multiple work-in-progress titles.&nbsp;In addition,
+            <a href="https://riotforgegames.com/en-us/">Riot Forge</a> gives
+            developers access to Riot’s IP to create games like
+            <em><a href="https://ruinedking.com/en-us/">Ruined King</a></em>
+            and plenty of other adventures across Runeterra. We’re also
+            expanding the world of Runeterra through multimedia projects across
+            music, comic books, board games, and
+            <em
+              ><a href="https://www.youtube.com/watch?v=IA-v_LB3Qpc"
+                >Arcane</a
+              ></em
+            >, our Emmy Award-winning animated series.
+          </p>
+          <p dir="ltr">
+            The annual
+            <a href="https://watch.lolesports.com/"
+              >League of Legends World Championship</a
+            >
+            features qualified esports teams from 12 international leagues.
+            Worlds is the most widely viewed and followed esport tournament, and
+            it’s among the largest and most popular gaming and sporting events
+            in the world.&nbsp;
+          </p>
+          <p dir="ltr">
+            Founded by Brandon Beck and Marc Merrill, and led by CEO Dylan
+            Jadeja, Riot is headquartered in Los Angeles, California, and has
+            4,500+ Rioters in 20+ offices worldwide. Riot has been certified as
+            a
+            <a href="https://www.greatplacetowork.com/certified-company/1243999"
+              >Great Place to Work</a
+            >
+            for three years in a row and featured on numerous lists including
+            Fortune’s “100 Best Companies to Work For,” “25 Best Companies to
+            Work in Technology,” “100 Best Workplaces for Millennials,” and “50
+            Best Workplaces for Flexibility.”
+          </p>
+        </div>
+        <div>
+          <h2 class="heading heading--3">Our Values</h2>
+          <div>
+            <div class="eyebrow eyebrow--dark">
+              <span>PLAYER EXPERIENCE FIRST</span>
+            </div>
+            <div class="eyebrow eyebrow--dark"><span>DARE TO DREAM</span></div>
+            <div class="eyebrow eyebrow--dark">
+              <span>THRIVE TOGETHER</span>
+            </div>
+            <div class="eyebrow eyebrow--dark">
+              <span>EXECUTE WITH EXCELLENCE</span>
+            </div>
+            <div class="eyebrow eyebrow--dark">
+              <span>STAY HUNGRY; STAY HUMBLE</span>
+            </div>
+          </div>
+          <div class="grid__item tablet-one-half">
+            <div
+              class="text-with-image__text content-center content-center--4-12"
+            >
+              <h3 class="heading heading--4">Diversity &amp; Inclusion</h3>
+              <div class="copy prose">
+                <p
+                  dir="ltr"
+                  style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt"
+                >
+                  We’re focused on making Riot a great home for people who love
+                  making games and setting a high bar for diversity and
+                  inclusion.
+                </p>
+              </div>
+              <a
+                href="https://www.riotgames.com/en/diversity-and-inclusion"
+                class="button"
+                ><span>Learn More</span></a
+              >
+            </div>
+          </div>
+          <div class="grid__item tablet-one-half">
+            <div
+              class="text-with-image__text content-center content-center--4-12"
+            >
+              <h3 class="heading heading--4">Social Impact</h3>
+              <div class="copy prose">
+                <p>
+                  We believe that anyone with passion, vision, and perseverance
+                  can make a positive impact. As part of that ethos, we also
+                  believe that there are ways where we, as a company, can
+                  provide long-term value and positive impact to the players,
+                  partners, Rioters, and communities we serve.
+                </p>
+                <p>
+                  Through corporate social responsibility, we hope to apply our
+                  unique resources and strengths to create a positive and
+                  lasting impact for all of our stakeholders, players, Rioters,
+                  our communities, and our planet.
+                </p>
+              </div>
+              <a
+                href="https://www.riotgames.com/en/who-we-are/social-impact"
+                class="button"
+                ><span>Learn More</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="widget__wrapper widget__wrapper--officerandomiser js-widget js-widget--desktop visible--desktop js-widget--tablet visible--tablet js-widget--mobile visible--mobile"
+          data-widget-id="daab347976b98c1502eee31abdeed148"
+        >
+          <h2 class="heading heading--3 heading--light">We are global</h2>
+          <div class="copy copy--large copy--light prose">
+            <p>
+              Riot Games’ HQ is located in sunny Los Angeles, but we have many
+              more offices around the globe. We’re looking for passionate gamers
+              who are also leaders in their field to help us deliver value to
+              players—no matter where they play.
+            </p>
+          </div>
+          <a
+            href="https://www.riotgames.com/en/work-with-us/offices"
+            class="button button--inverse"
+            ><span>Explore our offices</span></a
+          >
+          <div class="randomiser-list-item__heading">
+            <h3 class="heading heading--5 heading--light">Dubai</h3>
+            <p class="heading heading--5 heading--light heading--muted">UAE</p>
+          </div>
+          <div class="randomiser-list-item__content">
+            Open Positions:<span class="badge">0</span>
+          </div>
+          <div class="randomiser-list-item__heading">
+            <h3 class="heading heading--5 heading--light">Dubai</h3>
+            <p class="heading heading--5 heading--light heading--muted">UAE</p>
+          </div>
+          <div class="randomiser-list-item__content">
+            Open Positions:<span class="badge">0</span>
+          </div>
+          <div class="randomiser-list-item__heading">
+            <h3 class="heading heading--5 heading--light">Dubai</h3>
+            <p class="heading heading--5 heading--light heading--muted">UAE</p>
+          </div>
+          <div class="randomiser-list-item__content">
+            Open Positions:<span class="badge">0</span>
+          </div>
+        </div>
+        <div
+          class="widget__wrapper widget__wrapper--textwithcta js-widget js-widget--desktop visible--desktop js-widget--tablet visible--tablet js-widget--mobile visible--mobile"
+          data-widget-id="e4cf8388de99afb6ab2908f546aa72cd"
+        >
+          <div
+            data-props='{"_id":"e4cf8388de99afb6ab2908f546aa72cd","title":"Work With Us","callToActionLink":"/en/work-with-us","callToActionText":"Explore a career at Riot","callToActionNewWindow":false,"description":null,"staticImage":null,"className":null,"i18n":{"__languages":[{"name":"Bahasa Indonesia","slug":"id","code":"id_id"},{"name":"Bahasa Melayu","slug":"ms","code":"ms_MY"},{"name":"Português do Brasil","slug":"pt-br","code":"pt_br"},{"name":"Čeština","slug":"cs","code":"cs_CZ"},{"name":"English","slug":"en","code":"en_US"},{"name":"Français","slug":"fr","code":"fr_fr"},{"name":"Deutsch","slug":"de","code":"de_de"},{"name":"Ελληνικά","slug":"el","code":"el_GR"},{"name":"Magyar","slug":"hu","code":"hu_HU"},{"name":"Italiano","slug":"it","code":"it_IT"},{"name":"日本語","slug":"ja","code":"ja_ja"},{"name":"한국어","slug":"ko","code":"ko_ko"},{"name":"Español (Latinoamérica)","slug":"es-419","code":"es_419"},{"name":"Polski","slug":"pl","code":"pl_PL"},{"name":"Română","slug":"ro","code":"ro_RO"},{"name":"Русский","slug":"ru","code":"ru_ru"},{"name":"中文 (简体字)","slug":"zh-cn","code":"zh_cn"},{"name":"Español","slug":"es","code":"es_es"},{"name":"ภาษาไทย","slug":"th","code":"th_th"},{"name":"繁體中文","slug":"zh-hant","code":"zh_hant"},{"name":"Türkçe","slug":"tr","code":"tr_tr"},{"name":"Tiếng Việt","slug":"vi","code":"vi_vi"}]},"applyImpactReportStyle":null}'
+            class="widget null widget--spacing-standard"
+          >
+            <div class="text-with-cta">
+              <h2 class="heading heading--3">Work With Us</h2>
+              <a href="https://www.riotgames.com/en/work-with-us" class="button"
+                ><span>Explore a career at Riot</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__inner">
+        <div class="content-center">
+          <div class="footer__row">
+            <div class="footer__col">
+              <div class="footer__col-inner">
+                <a class="footer__logo" href="https://www.riotgames.com/">
+                  <span
+                    class="icon"
+                    style="width: 38px; height: 40px; line-height: 40px"
+                  >
+                    <span class="is-vhidden">Riot Games</span>
+                    <svg
+                      width="38"
+                      height="40"
+                      dataname="Layer 1"
+                      viewBox="0 0 185.47 163.51"
+                    >
+                      <path
+                        class="cls-1"
+                        d="M98.77 0L0 45.74l24.61 93.66 18.73-2.3-5.15-58.89 6.15-2.74 10.62 60.2 32.01-3.93-5.69-65 6.09-2.71 11.68 66.23 32.38-3.98-6.23-71.25 6.16-2.74 12.77 72.43 32.01-3.93V19.38L98.77 0zm2.32 142.05l1.63 9.22 73.42 12.24v-30.68l-75.01 9.21-.04.01zM176.17.71V0h3.64v.71zm1.41 3.94V.4h.81v4.25zm3 0V0h.8v4.65zm2.21 0L180.73 0h.83L183 3.41 184.44 0h.84l-2.06 4.65zm1.83 0V0h.81v4.65z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+                <nav>
+                  <ul class="list--unstyled list--inline">
+                    <li>
+                      <a href="https://www.riotgames.com/en/press" class=""
+                        >Press</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.riotgames.com/en/security" class=""
+                        >Security</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.riotgames.com/en/legal" class=""
+                        >Legal</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.riotgames.com/en/leadership" class=""
+                        >Leadership</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.riotgames.com/en/candidate-privacy"
+                        class=""
+                        >Candidate Privacy</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.riotgames.com/en/terms-of-service"
+                        class=""
+                        >Terms of Service</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.riotgames.com/en/privacy-notice"
+                        class=""
+                        >Privacy Notice</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://support.riotgames.com/hc/en-us"
+                        class=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Player Support</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.riotgames.com/en/e-verify-right-to-work"
+                        class=""
+                        >E-Verify</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.riotgames.com/en/accessibility"
+                        class=""
+                        >Accessibility</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__social">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.facebook.com/RiotGames/"
+              >
+                <span
+                  class="icon"
+                  style="width: 9px; height: 16px; line-height: 16px"
+                >
+                  <span class="is-vhidden">Follow us on Facebook</span>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    href="https://twitter.com/riotgames"
+                  >
+                    <span
+                      class="icon"
+                      style="width: 19px; height: 14px; line-height: 14px"
+                    >
+                      <span class="is-vhidden">Follow us on Twitter</span>
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        href="https://www.linkedin.com/company/riot-games"
+                      >
+                        <span
+                          class="icon"
+                          style="width: 16px; height: 16px; line-height: 16px"
+                        >
+                          <span class="is-vhidden">Share this on LinkedIn</span>
+                          <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.youtube.com/riotgames"
+                          >
+                            <span
+                              class="icon"
+                              style="
+                                width: 19px;
+                                height: 13px;
+                                line-height: 13px;
+                              "
+                            >
+                              <span class="is-vhidden">Watch on YouTube</span>
+                              <div class="separator"></div>
+                              <div class="footer__row">
+                                <div class="footer__col">
+                                  <div class="footer__cookie">
+                                    <button
+                                      class="js-cookie-preference-trigger"
+                                    >
+                                      Cookie Preferences
+                                    </button>
+                                  </div>
+                                  © 2023 Riot Games, Inc. All Rights Reserved.
+                                </div>
+                                <div class="footer__col">
+                                  <a
+                                    href="https://www.riotgames.com/en/who-we-are#top"
+                                  >
+                                    To the Surface
+                                  </a>
+                                </div>
+                              </div>
+                            </span>
+                          </a>
+                        </span>
+                      </a>
+                    </span>
+                  </a>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
