@@ -5,26 +5,16 @@ body {
 }
 .top-bar {
   background-color: #111111;
+  top: 0;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17.75px 30px;
-  position: relative; /* Add this line */
-  z-index: 1; /* Add this line */
+  width: 100%;
+  position: fixed; /* Add this line */
+  z-index: 10; /* Add this line */
+  height: 80px;
 }
-
-/* scrolling state */
-.top-bar.fixed-top {
-  position: fixed;
-  top: 0;
-  width: 97.4%;
-  padding: 25px 20px;
-  /* scrolling colors */
-  background-color: black;
-  color: white;
-}
-
 
 .left, .right {
   display: flex;
@@ -175,7 +165,7 @@ body {
 .explore-hero__filter:before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 80px;
   right: 0;
   left: 0;
   height: 900px;
@@ -196,6 +186,7 @@ body {
   font-style: normal;
 }
 .custom-box {
+  margin-top: 80px;
   width: 97.5%;
   height: 98px;
   margin: 20px auto 0;
@@ -211,10 +202,12 @@ body {
 }
 #showMe {
   color: rgb(101, 100, 98);
+  margin-top: 160px;
   margin-right: 10px;
 }
 .collapsible-label {
   color: #ffffff; /* White color */
+  margin-top: 160px;
 }
 .collapsible-content {
   display: none;
@@ -277,7 +270,7 @@ body {
 }
 
 .headline-container::before {
-  content: "Transitioning from Summoner Names to Riot IDs"; /* Add your text here */
+  content: "Planting Trees and Taking Drakes at Worlds 2023"; /* Add your text here */
   display: block;
   font-size: 48px; /* Adjust the font size as needed */
   font-family: 'Mark Pro', Arial, sans-serif;
@@ -419,4 +412,52 @@ body {
   left: 75%;
   transform: translateX(-50%);
   z-index: 1;
+}
+
+.responsive-media-custom-boxes {
+  position: relative; 
+  overflow: hidden;
+  width: 100%;
+}
+.responsive-media-custom-boxes img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.responsive-media-custom-boxes img:hover {
+  transform: scale(1.1);
+}
+
+
+.date-container {
+  writing-mode: vertical-lr;
+  text-align: center;
+  position: absolute;
+  top: 0; /* Adjust the distance from the top */
+  left: 0; /* Adjust the distance from the left */
+}
+
+.eyebrow {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  margin-left: 40px; /* Margin for eyebrow */
+}
+
+.summary__heading {
+  margin-left: 40px; /* Margin for summary__heading */
+
+}
+
+.summary__sell {
+  margin-left: 40px; /* Margin for summary__sell */
+}
+
+.summary__content {
+  position: absolute; 
+  margin-top: 400px;/* Add some space between the media and text */
 }
