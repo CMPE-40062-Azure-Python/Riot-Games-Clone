@@ -240,6 +240,13 @@ body {
   z-index: 1;
 }
 
+.custom-box-responsive:hover .icon.brush-icon__bg {
+  fill: red; /* Change fill color to red on hover */
+}
+
+.custom-box-responsive:hover .icon.brush-icon__type {
+  fill: white; /* Change fill color to white on hover */
+}
 .responsive-media {
   position: relative;
   overflow: hidden;
@@ -305,6 +312,15 @@ body {
 .headline-container:hover::after {
   opacity: 1; /* Change opacity on hover */
 }
+.icon.brush-icon__bg {
+  fill: white; /* Set initial fill color to white */
+  transition: fill 0.3s; /* Add transition for smooth color change */
+}
+
+.icon.brush-icon__type {
+  fill: red; /* Set initial fill color to red */
+  transition: fill 0.3s; /* Add transition for smooth color change */
+}
 
 
 /* codes for custom box bg*/
@@ -322,7 +338,6 @@ body {
   position: relative;
   margin-top: 1,680.04px;
 }
-
 #custom-box-1 {
   height: 650.188px;
   width: 640px;
@@ -406,7 +421,13 @@ body {
   position: absolute; 
   margin-top: 400px;/* Add some space between the media and text */
 }
+#custom-box-1:hover .icon.brush-icon__bg {
+  fill: red; /* Change fill color to red on hover */
+}
 
+#custom-box-1:hover .icon.brush-icon__type {
+  fill: white; /* Change fill color to white on hover */
+}
 /* custom box 2*/
 #custom-box-2 {
   height: 650.188px;
@@ -436,23 +457,6 @@ body {
 #custom-box-2:hover:after{
   visibility: visible;
 }
-/* 
-#custom-box-2::before{
-  content: "";
-  background-image: url('/static/images/distressed-underline.svg');
-  background-repeat: no-repeat;
-  background-size: 19.5% 100%;
-  height: 4px;
-  width: 100%; 
-  position: absolute;
-  bottom: 140px; 
-  left: 41px;
-  visibility: hidden; 
-}
-
-#custom-box-2:hover::before{
-  visibility: visible;
-} */
 
 .date-container1 {
   writing-mode: vertical-rl;
@@ -494,28 +498,199 @@ body {
   margin-top: 40px;/* Add some space between the media and text */
 }
 
+#custom-box-2:hover .icon.brush-icon__bg {
+  fill: red; /* Change fill color to red on hover */
+}
+
+#custom-box-2:hover .icon.brush-icon__type {
+  fill: white; /* Change fill color to white on hover */
+}
+
+
 #custom-box-3 {
   height: 650.188px;
   width: 640px;
-  background-color: cyan;
   position: absolute;
-  top: 2200px; /* Set the distance from the top */
-  left: 25%;
+  top: 2000px; /* Set the distance from the top */
+  left: 26.5%;
   transform: translateX(-50%);
   z-index: 1;
 }
+
+#custom-box-3::after{
+  content: "";
+  background-image: url('/static/images/distressed-underline.svg');
+  background-repeat: no-repeat;
+  background-size: 73% 100%;
+  height: 4px; /* Adjust height as needed */
+  width: 100%; /* Adjust width as needed */
+  position: absolute;
+  bottom: 175px; /* Adjust position as needed */
+  left: 41px;
+  visibility: hidden; /* Hidden by default */
+}
+
+#custom-box-3:hover:after{
+  visibility: visible;
+}
+
+#custom-box-3::before{
+  content: "";
+  background-image: url('/static/images/distressed-underline.svg');
+  background-repeat: no-repeat;
+  background-size: 19.5% 100%;
+  height: 4px;
+  width: 100%; 
+  position: absolute;
+  bottom: 140px; 
+  left: 41px;
+  visibility: hidden; 
+}
+
+#custom-box-3:hover::before{
+  visibility: visible;
+}
+
+.date-container2 {
+  writing-mode: vertical-rl;
+  text-align: center;
+  position: absolute;
+  top: 0; /* Adjust the distance from the top */
+  left: 0; /* Adjust the distance from the left */
+  
+  transform: rotate(180deg);
+}.eyebrow2 {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  margin-left: 40px; /* Margin for eyebrow */
+}
+
+.summary__heading2 {
+  margin-top: 15px;
+  margin-left: 40px; /* Margin for summary__heading */
+  font-size: 28px; /* Adjust the font size as needed */
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: bolder;
+}
+.summary__sell2 {
+  margin-top: -20px;
+  text-align: left;
+  margin-left: 40px;
+  font-size: 18px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: lighter;
+  color: #656462;
+  line-height: 1.8; /* Adjust the line height as needed */
+}
+
+.summary__content2 {
+  position: absolute; 
+  margin-top: 400px;/* Add some space between the media and text */
+}
+
+#custom-box-3:hover .icon.brush-icon__bg {
+  fill: red; /* Change fill color to red on hover */
+}
+
+#custom-box-3:hover .icon.brush-icon__type {
+  fill: white; /* Change fill color to white on hover */
+}
+
 
 #custom-box-4 {
   height: 650.188px;
   width: 640px;
-  background-color: cyan;
   position: absolute;
-  top: 2200px; /* Set the distance from the top */
-  left: 75%;
+  top: 2000px; /* Set the distance from the top */
+  left: 73.5%;
   transform: translateX(-50%);
   z-index: 1;
 }
 
+#custom-box-4::after{
+  content: "";
+  background-image: url('/static/images/distressed-underline.svg');
+  background-repeat: no-repeat;
+  background-size: 48% 100%;
+  height: 4px; /* Adjust height as needed */
+  width: 100%; /* Adjust width as needed */
+  position: absolute;
+  bottom: 175px; /* Adjust position as needed */
+  left: 41px;
+  visibility: hidden; /* Hidden by default */
+}
+
+#custom-box-4:hover:after{
+  visibility: visible;
+}
+/* 
+#custom-box-4::before{
+  content: "";
+  background-image: url('/static/images/distressed-underline.svg');
+  background-repeat: no-repeat;
+  background-size: 19.5% 100%;
+  height: 4px;
+  width: 100%; 
+  position: absolute;
+  bottom: 140px; 
+  left: 41px;
+  visibility: hidden; 
+}
+
+#custom-box-4:hover::before{
+  visibility: visible;
+} */
+
+.date-container3 {
+  writing-mode: vertical-rl;
+  text-align: center;
+  position: absolute;
+  top: 0; /* Adjust the distance from the top */
+  left: 0; /* Adjust the distance from the left */
+  
+  transform: rotate(180deg);
+}.eyebrow3 {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  margin-left: 40px; /* Margin for eyebrow */
+}
+
+.summary__heading3 {
+  margin-top: 15px;
+  margin-left: 40px; /* Margin for summary__heading */
+  font-size: 28px; /* Adjust the font size as needed */
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: bolder;
+}
+.summary__sell3 {
+  margin-top: -20px;
+  text-align: left;
+  margin-left: 40px;
+  font-size: 18px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: lighter;
+  color: #656462;
+  line-height: 1.8; /* Adjust the line height as needed */
+}
+
+.summary__content3 {
+  position: absolute; 
+  margin-top: 40px;/* Add some space between the media and text */
+}
+
+#custom-box-4:hover .icon.brush-icon__bg {
+  fill: red; /* Change fill color to red on hover */
+}
+
+#custom-box-4:hover .icon.brush-icon__type {
+  fill: white; /* Change fill color to white on hover */
+}
 #custom-box-5 {
   height: 650.188px;
   width: 640px;
