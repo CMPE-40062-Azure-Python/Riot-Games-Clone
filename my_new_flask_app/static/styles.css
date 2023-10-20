@@ -1187,7 +1187,7 @@ ul.left li:hover {
   padding: 10px 30px;
   border-radius: 32px;
   color: black;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   min-width: 160px;
   -webkit-font-smoothing: auto;
@@ -1201,4 +1201,27 @@ ul.left li:hover {
   transition-property: color,background-color,background-position;
   transition-duration: .3s;
   transition-timing-function: ease-out;
+}
+.button:hover {
+  border-color: red; /* Change border color to red on hover */
+  color: red; /* Change text color to red on hover */
+}
+.load-more a.button:hover {
+  position: relative;
+}
+
+.load-more a.button:hover::after {
+  content: "";
+  margin-bottom: 16px;
+  margin-left: 82px;
+  position: absolute;
+  width: 38%;
+  height: 1px;
+  background-color: red; /* Change this to the desired underline color */
+  bottom: 0;
+  left: 0;
+}
+
+.button:hover::before {
+  color: red; /* Change the color of the pseudo-element to red on hover */
 }
