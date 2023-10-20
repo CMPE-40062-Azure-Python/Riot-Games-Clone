@@ -312,38 +312,114 @@ body {
 
 /* codes for custom box bg*/
 .custom-box-bg {
-  height: 1300px;
-  margin-top: 262.5px;
-  background-color: #D8D9D6;
+  height: 1110px;
+  margin-top: 342.5px;
+  background-color: #d8d9d6;
   position: relative;
 }
 
 /* codes for another custom box bg */
 .another-custom-box-bg { 
   height: 2880.36px;
-  background-color: #ffffff;
+  background-color: #e7e6e3;
   position: relative;
-  margin-top: 1,707.04px;
+  margin-top: 1,680.04px;
 }
 
 #custom-box-1 {
   height: 650.188px;
   width: 640px;
-  background-color: cyan;
+  background-color: e7e6e3;
   position: absolute;
-  top: 1500px; /* Set the distance from the top */
-  left: 25%;
+  top: 1290px; /* Set the distance from the top */
+  left: 26.5%;
   transform: translateX(-50%);
   z-index: 1;
 }
+#custom-box-1::after{
+  content: "";
+  background-image: url('/static/images/distressed-underline.svg');
+  background-repeat: no-repeat;
+  background-size: 86% 100%;
+  height: 4px; /* Adjust height as needed */
+  width: 100%; /* Adjust width as needed */
+  position: absolute;
+  bottom: 175px; /* Adjust position as needed */
+  left: 43px;
+  visibility: hidden; /* Hidden by default */
+}
 
+#custom-box-1:hover:after{
+  visibility: visible;
+}
+
+#custom-box-1::before{
+  content: "";
+  background-image: url('/static/images/distressed-underline.svg');
+  background-repeat: no-repeat;
+  background-size: 17.5% 100%;
+  height: 4px; /* Adjust height as needed */
+  width: 100%; /* Adjust width as needed */
+  position: absolute;
+  bottom: 140px; /* Adjust position as needed */
+  left: 43px;
+  visibility: hidden; /* Hidden by default */
+}
+
+#custom-box-1:hover::before{
+  visibility: visible;
+}
+
+
+
+.date-container {
+  writing-mode: vertical-rl;
+  text-align: center;
+  position: absolute;
+  top: 0; /* Adjust the distance from the top */
+  left: 0; /* Adjust the distance from the left */
+  
+  transform: rotate(180deg);
+}.eyebrow {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  margin-left: 40px; /* Margin for eyebrow */
+}
+
+.summary__heading {
+  margin-top: 15px;
+  margin-left: 40px; /* Margin for summary__heading */
+  font-size: 28px; /* Adjust the font size as needed */
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: bolder;
+}
+.summary__sell {
+  margin-top: -20px;
+  text-align: left;
+  margin-left: 40px;
+  font-size: 18px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: lighter;
+  color: #656462;
+  line-height: 1.8; /* Adjust the line height as needed */
+}
+
+.summary__content {
+  position: absolute; 
+  margin-top: 400px;/* Add some space between the media and text */
+}
+
+/* custom box 2*/
 #custom-box-2 {
   height: 650.188px;
   width: 640px;
   background-color: cyan;
   position: absolute;
-  top: 1500px; /* Set the distance from the top */
-  left: 75%;
+  top: 1290px; /* Set the distance from the top */
+  left: 73.5%;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -428,36 +504,4 @@ body {
 
 .responsive-media-custom-boxes img:hover {
   transform: scale(1.1);
-}
-
-
-.date-container {
-  writing-mode: vertical-lr;
-  text-align: center;
-  position: absolute;
-  top: 0; /* Adjust the distance from the top */
-  left: 0; /* Adjust the distance from the left */
-}
-
-.eyebrow {
-  display: inline-block;
-  background-color: red;
-  color: white;
-  text-align: left;
-  padding: 5px;
-  margin-left: 40px; /* Margin for eyebrow */
-}
-
-.summary__heading {
-  margin-left: 40px; /* Margin for summary__heading */
-
-}
-
-.summary__sell {
-  margin-left: 40px; /* Margin for summary__sell */
-}
-
-.summary__content {
-  position: absolute; 
-  margin-top: 400px;/* Add some space between the media and text */
 }
