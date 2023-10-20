@@ -63,7 +63,7 @@
         </div>
       </div>
       <div class="right">
-        <div class="language-selector" onclick="toggleLanguages()">
+        <div class="language-selector">
           <img
             src="{{ url_for('static', filename='images/language logo.png') }}"
             alt="Language logo"
@@ -85,29 +85,33 @@
       </div>
     </div>
     <main>
-      <div class="video-background-container text-center" style="height: 300px">
-        <video class="video-background" autoplay loop muted>
-          <source
-            src="{{ url_for('static', filename='videos/who-are-we-vid.mp4') }}"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <div class="center-content">
-          <div class="red-box">
-            <span style="color: white; font-size: 15px; margin-bottom: 10px"
-              >WHO ARE WE?</span
-            >
+      <div class="flex-container">
+        <div
+          class="video-background-container text-center"
+          style="height: 800px"
+        >
+          <video class="video-background" autoplay loop muted>
+            <source
+              src="{{ url_for('static', filename='videos/who-are-we-vid.mp4') }}"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <div class="center-content">
+            <div class="red-box">
+              <span style="color: white; font-size: 15px; margin-bottom: 10px"
+                >WHO ARE WE?</span
+              >
+            </div>
+            <h1 style="color: white; font-size: 75px; margin-top: 40px">
+              We Are Rioters
+            </h1>
           </div>
-          <h1 style="color: white; font-size: 75px; margin-top: 40px">
-            We Are Rioters
-          </h1>
         </div>
       </div>
-
       <div
         class="background-container"
-        style="background-image: url('{{ url_for('static', filename='images/we aspire part.png') }}'); background-size: cover; min-height: 100vh; margin-top: 480px;"
+        style="background-image: url('{{ url_for('static', filename='images/we aspire part.png') }}'); background-size: cover; min-height: 100vh"
       >
         <div class="text-container text-center">
           <p style="font-weight: bold; font-size: 40px">
@@ -223,19 +227,26 @@
         <div class="heading heading--3">
           <h2 class="text-center" style="font-size: 60px">Our Values</h2>
         </div>
-        <div>
-          <div class="eyebrow eyebrow--dark">
-            <span>PLAYER EXPERIENCE FIRST</span>
-          </div>
-          <div class="eyebrow eyebrow--dark"><span>DARE TO DREAM</span></div>
-          <div class="eyebrow eyebrow--dark">
-            <span>THRIVE TOGETHER</span>
-          </div>
-          <div class="eyebrow eyebrow--dark">
-            <span>EXECUTE WITH EXCELLENCE</span>
-          </div>
-          <div class="eyebrow eyebrow--dark">
-            <span>STAY HUNGRY; STAY HUMBLE</span>
+        <div class="image-container">
+          <div class="columns">
+            <div class="column">
+              <span
+                >PLAYER EXPERIENCE<br />
+                FIRST</span
+              >
+            </div>
+            <div class="column">
+              <span>DARE TO DREAM</span>
+            </div>
+            <div class="column">
+              <span>THRIVE TOGETHER</span>
+            </div>
+            <div class="column">
+              <span>EXECUTE WITH EXCELLENCE</span>
+            </div>
+            <div class="column">
+              <span>STAY HUNGRY; STAY HUMBLE</span>
+            </div>
           </div>
         </div>
         <div class="grid__item tablet-one-half">
