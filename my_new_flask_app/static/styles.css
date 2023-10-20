@@ -333,7 +333,7 @@ body {
 
 /* codes for another custom box bg */
 .another-custom-box-bg { 
-  height: 2880.36px;
+  height: 2680.36px;
   background-color: #e7e6e3;
   position: relative;
   margin-top: 1,680.04px;
@@ -402,7 +402,7 @@ body {
 .summary__heading {
   margin-top: 15px;
   margin-left: 40px; /* Margin for summary__heading */
-  font-size: 28px; /* Adjust the font size as needed */
+  font-size: 28px; 
   font-family: 'Mark Pro', Arial, sans-serif;
   font-weight: bolder;
 }
@@ -1043,4 +1043,121 @@ body {
 
 .responsive-media-custom-boxes img:hover {
   transform: scale(1.1);
+}
+
+footer {
+  background-color: #252423;
+  color: #ffffff;
+  height: 195px;
+  padding: 5px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.logo .icon-riot path {
+  fill: #ffffff; /* Set the default fill color */
+  transition: fill 0.3s; /* Add a smooth transition for the hover effect */
+}
+
+.logo .icon-riot:hover path {
+  fill: #ff0000; /* Change the fill color to red on hover */
+}
+ul.left {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-right: 50px;
+  padding: 0;
+  display: flex;
+  margin-left: 40px;
+  font-size: 12px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: bolder;
+  color: #656462;
+}
+
+ul.left li {
+  margin-top: 10px;
+  margin-right: 32.5px;
+  cursor: pointer;
+}
+
+ul.left li:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #ffffff; /* Change to a brighter color on hover */
+}
+
+.right {
+  display: flex;
+  margin-left: auto;
+}
+
+.right .logo {
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.separator {
+  border-top: 1px solid #454443;
+  width: 95%;
+  margin: 5px auto;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 40px;
+  margin-left: 40px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  color: #656462;
+}
+
+.left-text{
+  margin-right: 50px;
+}
+
+.right-text{
+  margin-right: 85px;
+  margin-bottom: 40px;
+}
+
+
+.footer__social a {
+  display: inline-block;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
+  display: inline-flex;
+  align-items: left;
+  cursor: pointer;
+}
+.icon path {
+  fill: #ffffff; /* Set the default fill color */
+  transition: fill 0.3s; /* Add a smooth transition for the hover effect */
+}
+
+.icon:hover path {
+  fill: #ff0000; /* Change the fill color to red on hover */
+}
+
+.footer__social{
+  margin-right: 20px;
+}
+.icon .is-vhidden {
+  display: none;
 }
