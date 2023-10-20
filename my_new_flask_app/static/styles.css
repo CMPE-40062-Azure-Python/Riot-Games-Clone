@@ -1161,3 +1161,44 @@ ul.left li:hover {
 .icon .is-vhidden {
   display: none;
 }
+
+.button:before {
+  content: '/';
+  margin-right: 10px;
+}
+.text-center {
+  text-align: center;
+}
+.load-more {
+  background-color: #e7e6e3;
+}
+.button {
+  margin-top: -140px;
+  z-index: 4;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #d8d9d6;
+  vertical-align: middle;
+  cursor: pointer;
+  overflow: visible;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 32px;
+  color: black;
+  font-size: 14px;
+  line-height: 30px;
+  min-width: 160px;
+  -webkit-font-smoothing: auto;
+  letter-spacing: .025em;
+  background-color: black;
+  background-image: linear-gradient(-183deg,#e7e6e3 49.5%,#2b2a29 50.5%);
+  background-size: 100% 255%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  font-family: 'Eco Coding W02 WGL4',monospace;
+  transition-property: color,background-color,background-position;
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+}
