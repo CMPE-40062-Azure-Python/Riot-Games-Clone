@@ -19,6 +19,17 @@ body {
   }
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .image {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
 main {
   margin-top: 80px; /* Adjust the value to match the height of your top-bar */
   font-family: "Mark Pro", Arial, sans-serif;
@@ -208,10 +219,12 @@ h1 {
   display: flex;
   position: relative;
   background-size: cover;
-  min-height: 80vh;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: flex-start;
   margin-top: -100px;
+  background-size: cover;
+  background-image: url("/static/images/we aspire part.png");
 }
 
 .text-container {
@@ -281,4 +294,19 @@ h1 {
   font-weight: 900;
   font-size: x-large;
   color: rgb(255, 255, 255);
+}
+
+.image {
+  max-width: 1px; /* Adjust the width as needed */
+  max-height: 1px;
+}
+
+.heading.heading--4 {
+  background-image: url("/static/images/explore-hero-bg--large.jpg");
+  background-size: cover; /* Adjust to your needs */
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255); /* Set the text color */
+  height: 500px;
+  display: flex;
+  align-items: center;
 }
