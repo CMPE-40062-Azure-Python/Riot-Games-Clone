@@ -1066,3 +1066,270 @@ body {
     font-size: 1rem;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* For Small Screens */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        justify-content: center;
+    }
+    .Info_container,
+    .upper-right_nav > .search_container {
+        display: none;
+    }
+    .nav_container {
+        height: 90px;
+        align-items: center;
+    }
+    .riot_logo > #img_riotLogo {
+        height: 30px;
+        width: 105px;
+    }
+    .riot_secondlogo > #img_secondLogo {
+        height: 35px;
+        width: 38px;
+        margin-left: 20px;
+    }
+    .worldLogo_container > #world_logo {
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+    .signIn_container > #signIn_button {
+        border: 0;
+        background-color: red;
+        padding: 10px;
+        border-radius: 20px;
+        width: 100px;
+        border: 1px solid transparent;
+        margin-right: -20px;
+    }
+    .world_text {
+        display: flex;
+        justify-content: center; 
+    }
+    .world_text h1 {
+        font-size: 3rem;
+    }
+    .h2_text h2 {
+        font-size: 1.7rem;
+    }
+    .h2_text {
+        justify-content: center;
+    }
+    .text3 {
+        display: none;
+    }
+    .world_text, .h2_text {
+        margin-left: -20px;
+    }
+    .watchNow_container {
+        justify-content: center;
+        margin-left: 100px;
+    }
+    .hero_background {
+        height: 1000px;
+    }
+    .news_container {
+        height: 1250px;
+    }
+    .news_container > .newsHeadline_container {
+        font-size: 1.5rem;
+        width: 337px;
+        margin: 30px auto 0 auto;
+    }
+    .news_container > .newsbox_container {
+        height: auto;
+        width: auto;
+        display: flex;
+        background-color: transparent;
+        flex-direction: column;
+        border-radius: 15px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .whats_happening {
+        width: 580px;
+    }
+    .whats_happening > .news_today > .news_title {
+        letter-spacing: 3px;
+        width: 550px;
+
+    }
+    .whats_happening > .news_today > .map_img {
+        width: 530px;
+        height: 250px;
+    }
+    .other_news {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .other_news > .news1,
+    .other_news > .news2,
+    .other_news > .news3,
+    .other_news > .news4,
+    .other_news > .news5 {
+        width: 580px;
+    }
+    .other_news > .news1 > .img_changeID,
+    .other_news > .news3 > .img_riotSeattle,
+    .other_news > .news4 > .img_riotgamehub {
+        margin-left: 160px;
+        width: 160px;
+    }
+    .other_news > .news2 > .img_riotExec {
+        width: px;
+        margin-left: 160px;
+    }
+    .other_news > .news1 > .news1_title
+    .other_news > .news2 > .news2title,
+    .other_news > .news3 > .news3title,
+    .other_news > .news4 > .news4title {
+        width: 400px;
+        overflow: visible;
+        text-overflow: initial;
+    }
+    .games_container {
+        height: auto;
+    }
+    .games_container > .games_title {
+        display: flex;
+        justify-content: center;
+        margin-left: -10px;
+    }
+    .games_container > .gameOption_container {
+        flex-direction: column;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .gameOption_container {
+        margin: 0 auto;
+        margin-top: -100px;
+    }
+    .gameOption_container > .game1,
+    .gameOption_container > .game2,
+    .gameOption_container > .game3,
+    .gameOption_container > .game4, 
+    .gameOption_container > .game5 {
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .gameOption_container > .game3 {
+        margin-top: -20px;
+        height: 200px;
+    }
+    .gameOption_container > .game4 {
+        margin-top: 25px;
+        height: 200px;
+    }
+    .gameOption_container > .game5 {
+        margin-top: -290px;
+    }
+    .gameOption_container > .game1 > .img_lolbg,
+    .gameOption_container > .game2 > .img_valobg,
+    .gameOption_container > .game3 > .img_tacticsbg,
+    .gameOption_container > .game4 > .img_wildriftbg,
+    .gameOption_container > .game5 > .img_runeterrabg {
+        width: 570px;
+        height: 201px;
+    }
+    .gameOption_container > .game5 {
+        height: 201px;
+    }
+    .esports_mainContainer {
+        margin-top: -150px;
+    }
+    .esports_mainContainer > .esports_container {  
+        margin-top: -200px;
+        width: 170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .esportsOption_container {
+        margin-top: 160px;
+        flex-direction: column;
+        margin-left: 45px;
+    }
+    .esportsOption_container > .esport2 {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .RiotForge_mainContainer {
+        margin-top: 0;
+    }
+    .RiotForge_mainContainer > .RiotForge_container {
+        margin-top: -150px;
+        width: 250px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .RiotForgeOption_container {
+        height: 950px;
+        margin-top: -60px;
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+    .RiotForgeOption_container > .RiotForge1,
+    .RiotForgeOption_container > .RiotForge2,
+    .RiotForgeOption_container > .RiotForge3 {
+        width: 450px;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .RiotForgeOption_container > .RiotForge1 > .img_RiotForge1bg,
+    .RiotForgeOption_container > .RiotForge2 > .img_RiotForge2bg,
+    .RiotForgeOption_container > .RiotForge3 > .img_RiotForge3bg{
+        width: 450px;
+    }
+    .career_container {
+        flex-direction: column;
+        height: 1100px;
+        display: flex;
+        justify-content: center;
+    }
+    .career_container > .hiring_info {
+        height: 500px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .hiringImg_container > .img_hiring {
+        height: 500px;
+        width: auto;
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .career_container > .hiring_info > .career_explore {
+        width: 520px;
+        height: 60px;
+    }
+    .footer_container {
+        margin-bottom: 100px;
+    }
+    .footer_container > .footer_upper {
+        flex-direction: column;
+    }
+    .footer_container > .footer_upper > .nocircle_fist {
+        margin: 0 auto;
+    }
+    .footer_container > .footer_upper > .nav_down {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        margin-left: 30px;
+        justify-content: center;   
+    }
+    .footer_container > .footer_upper > .nav_down > li {
+        margin-top: 10px;
+    }
+    .footer_lower {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}
