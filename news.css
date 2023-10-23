@@ -112,22 +112,22 @@ body {
   border-radius: 20px;
 }
 
-.right button {
-  height: 22.5px;
-  padding: 5px 10px;
-  display: inline-block; /* This will make the container only take the necessary width */
-  border-radius: 10px;
-  background-color: #f20909;
-  overflow: hidden; /* This will ensure the border radius is applied properly */
+.right button{
+  border: 0;
+  background-color: red;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100px;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
-.button-container {
-  height: 22.5px;
-  padding: 5px 10px;
+.button-container{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-#SignInButton {
-  height: 22.5px;
-}
 
 .language-selector {
   display: flex;
