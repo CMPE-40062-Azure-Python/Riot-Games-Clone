@@ -283,6 +283,8 @@ main {
 .button-container {
   height: 22.5px;
   padding: 5px 10px;
+  margin-top: 90px;
+  display: block;
 }
 
 #SignInButton {
@@ -348,6 +350,10 @@ h1 {
   left: 0;
   width: 100%;
   text-align: center;
+}
+.text-left-container {
+  text-align: left;
+  max-width: 100%;
 }
 
 .centered-left-align-content {
@@ -418,10 +424,9 @@ h1 {
   display: flex;
   position: relative;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 120vh;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: -100px;
   background-size: cover;
   background-image: url("images/we aspire part.png");
 }
@@ -430,20 +435,105 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.image-container {
-  margin-right: 20px; /* Adjust the margin to move the image to the right */
-}
-
-.image-container img {
-  max-width: 100%;
-  height: auto;
+  margin: 60px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .text-content {
   flex: 2;
   text-align: center;
+}
+
+.section5-container {
+  display: flex;
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-image: url("images/we aspire part.png");
+}
+
+.text-with-cta {
+  display: flex;
+  position: relative;
+  background-size: cover;
+  min-height: 30vh;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-image: url("images/we aspire part.png");
+}
+
+.section6-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("images/explore-hero-bg--large.jpg");
+}
+
+.we-are-global-heading {
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  height: 700px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-column {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+.info-column {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.open-positions-column {
+  flex: 1;
+  padding: 10px;
+  text-align: right;
+  color: white;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.image-column {
+  flex: 1;
+  margin-right: 200px;
+}
+
+.info-column {
+  flex: 2;
+  text-align: center; /* Center the content in this column */
+  margin-right: 100px;
+}
+
+.open-positions-column {
+  flex: 1;
+  text-align: center; /* Right-align the content in this column */
+  margin-right: 100px;
 }
 
 footer {
@@ -570,7 +660,7 @@ ul.left li:hover {
   text-align: center;
 }
 .load-more {
-  background-color: #e7e6e3;
+  background-color: #000000;
 }
 .button {
   margin-top: -140px;
@@ -586,42 +676,20 @@ ul.left li:hover {
   text-decoration: none;
   padding: 10px 30px;
   border-radius: 32px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   line-height: 30px;
   min-width: 160px;
   -webkit-font-smoothing: auto;
   letter-spacing: 0.025em;
-  background-color: black;
-  background-image: linear-gradient(-183deg, #e7e6e3 49.5%, #2b2a29 50.5%);
-  background-size: 100% 255%;
+  background-color: rgb(255, 0, 0);
   background-position: 50% 0;
   background-repeat: no-repeat;
   font-family: "Eco Coding W02 WGL4", monospace;
-  transition-property: color, background-color, background-position;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
 .button:hover {
-  border-color: red; /* Change border color to red on hover */
-  color: red; /* Change text color to red on hover */
-}
-.load-more a.button:hover {
-  position: relative;
-}
-
-.load-more a.button:hover::after {
-  content: "";
-  margin-bottom: 16px;
-  margin-left: 82px;
-  position: absolute;
-  width: 38%;
-  height: 1px;
-  background-color: red; /* Change this to the desired underline color */
-  bottom: 0;
-  left: 0;
-}
-
-.button:hover::before {
-  color: red; /* Change the color of the pseudo-element to red on hover */
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
