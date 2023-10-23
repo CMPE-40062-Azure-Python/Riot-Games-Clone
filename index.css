@@ -1,0 +1,1335 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+div {
+  display: block;
+}
+body {
+  box-sizing: border-box;
+  background-color: #222222;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+.nav_container div {
+  box-sizing: border-box;
+  height: 80px;
+  width: auto;
+}
+.nav_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: flex;
+  background-color: #111111;
+  z-index: 100;
+  transition: 3s;
+}
+.riot_logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0 0 35px;
+  border: 0;
+  margin: 0;
+}
+.riot_logo > #img_riotLogo {
+  height: 24px;
+  width: 95px;
+  cursor: pointer;
+}
+.riot_logo > #img_riotLogo:hover {
+  content: url("images/logo_red.png");
+}
+.fistLogo_container div {
+  padding: 0 0 0 15px;
+  width: 50px;
+  height: 80px;
+}
+.riot_secondlogo {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.riot_secondlogo > #img_secondLogo {
+  height: 25px;
+  width: 28px;
+}
+.Info_container div {
+  display: flex;
+  justify-content: flex-start;
+  width: 700px;
+}
+.info_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 0 40px;
+}
+#InfoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+#InfoList li {
+  display: inline-block;
+  margin-right: 35px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  background-color: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+#InfoList li:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.upper-right_nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  margin-right: 50px;
+}
+.upper-right_nav > .worldLogo_container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 20px;
+}
+.upper-right_nav > .worldLogo_container > #world_logo {
+  height: 32px;
+  width: 32px;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.upper-right_nav > .worldLogo_container > #world_logo:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+}
+.upper-right_nav > .search_container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.upper-right_nav > .search_container > .search_box {
+  border: 1px solid white;
+  background-color: #282828;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: white;
+}
+.upper-right_nav > .search_box::placeholder {
+  font-size: 12px;
+  padding: 10px;
+}
+.upper-right_nav > .signIn_container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.upper-right_nav > .signIn_container > #signIn_button {
+  border: 0;
+  background-color: red;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.upper-right_nav > .signIn_container > #signIn_button:hover {
+  border: 1px solid white;
+  color: white;
+}
+.hero_background {
+  background-image: url("images/yoru_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+.world_text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 150px;
+  margin-left: 180px;
+}
+.world_text h1 {
+  color: white;
+  font-size: 4rem;
+  font-family: "Mark Pro", Arial, sans-serif;
+  letter-spacing: 1.5px;
+}
+.h2_text {
+  position: absolute;
+  left: 0;
+  margin-left: 50px;
+  width: 700px;
+}
+.h2_text h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.h2_text > h2 > .subtext {
+  display: block;
+}
+.text3 {
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 40px;
+  width: 700px;
+}
+.text3 > .p1 {
+  color: gray;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.watchNow_container {
+  position: absolute;
+  left: 0;
+  width: 500px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.watchNow_container > #WatchNow_button {
+  background-color: #1fa4d0;
+  padding: 10px;
+  border: 1px solid wheat;
+  border-radius: 20px;
+  width: 250px;
+  height: 60px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.watchNow_container > #WatchNow_button:hover {
+  border: 1px solid black;
+  color: black;
+}
+.world_text,
+.h2_text,
+.text3,
+.watchNow_container {
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+.news_container {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 100%;
+  padding: 0;
+  margin-top: 650px;
+  justify-content: flex-start;
+  background: linear-gradient(to right, #072429 10%, black 80%);
+}
+.news_container > .newsHeadline_container {
+  color: white;
+  font-family: "Mark Pro", Arial, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  margin-left: 200px;
+  margin-top: 60px;
+}
+.news_container > .newsbox_container {
+  height: auto;
+  width: auto;
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  border-radius: 15px;
+  justify-content: center;
+}
+.whats_happening {
+  background-color: black;
+  height: 370px;
+  width: 680px;
+  margin: 20px 20px;
+  position: relative;
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+.whats_happening:hover {
+  border: 1px solid white;
+}
+.whats_happening > .news_today > .news_title {
+  position: relative;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 0;
+  margin-left: 25px;
+  width: 600px;
+  color: rgb(218, 213, 205);
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: "Mark Pro", Arial, sans-serif;
+  letter-spacing: 5px;
+}
+.whats_happening > .news_today > .logo_1 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  margin-top: 28px;
+  margin-left: 10px;
+}
+.whats_happening > .news_today > .map_img {
+  width: 630px;
+  height: 250px;
+  margin-top: 50px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.whats_happening > .news_today > .news_info {
+  color: white;
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  margin-bottom: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.whats_happening > .news_today > .watermark {
+  color: #5d5d5a;
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+.other_news {
+  width: 450px;
+  height: auto;
+  background-color: transparent;
+}
+.other_news > .news1 {
+  width: 420px;
+  height: 120px;
+  background-color: #222222;
+  padding: 0;
+  margin: 10px auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 1px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.other_news > .news1:hover {
+  border: 1px solid white;
+  background-color: #36454f;
+}
+.other_news > .news1 > .news1_title {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-height: 3.4rem;
+  width: 400px;
+  padding: 0;
+  display: block;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.other_news > .news1 > .news1_mark {
+  color: #5d5d5a;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.other_news > .news1 > .img_changeID {
+  width: 200px;
+  height: 120px;
+  padding: 0;
+  margin: 0;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  border-radius: 0 8px 8px 0;
+}
+.other_news > .news1 > .logo_2 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.other_news > .news2 {
+  width: 420px;
+  height: 120px;
+  background-color: #222222;
+  padding: 2px;
+  margin: 10px auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 1px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.other_news > .news2:hover {
+  border: 1px solid white;
+  background-color: #36454f;
+}
+.other_news > .news2 > .news2_title {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-height: 3.4rem;
+  width: 400px;
+  padding: 0;
+  display: block;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.other_news > .news2 > .news2_mark {
+  color: #5d5d5a;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.other_news > .news2 > .img_riotExec {
+  width: 200px;
+  height: 120px;
+  padding: 0;
+  margin-right: -50px;
+  margin-top: -3px;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  border-radius: 0 8px 8px 0;
+}
+.other_news > .news2 > .logo_3 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.other_news > .news3 {
+  width: 420px;
+  height: 120px;
+  background-color: #222222;
+  padding: 0;
+  margin: 10px auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 1px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.other_news > .news3:hover {
+  border: 1px solid white;
+  background-color: #36454f;
+}
+.other_news > .news3 > .news3_title {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-height: 3.4rem;
+  width: 400px;
+  padding: 0;
+  display: block;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.other_news > .news3 > .news3_mark {
+  color: #5d5d5a;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.other_news > .news3 > .img_riotSeattle {
+  width: 200px;
+  height: 120px;
+  padding: 0;
+  margin: 0;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  border-radius: 0 8px 8px 0;
+}
+.other_news > .news3 > .logo_4 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.other_news > .news4 {
+  width: 420px;
+  height: 120px;
+  background-color: #222222;
+  padding: 0;
+  margin: 10px auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 1px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.other_news > .news4:hover {
+  border: 1px solid white;
+  background-color: #36454f;
+}
+.other_news > .news4 > .news4_title {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-height: 3.4rem;
+  width: 400px;
+  padding: 0;
+  display: block;
+  margin-left: 20px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.other_news > .news4 > .news4_mark {
+  color: #5d5d5a;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+  margin-bottom: 35px;
+}
+.other_news > .news4 > .img_riotgamehub {
+  width: 200px;
+  height: 120px;
+  padding: 0;
+  margin: 0;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  border-radius: 0 8px 8px 0;
+}
+.other_news > .news4 > .logo_5 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.games_container {
+  width: 100%;
+  height: auto;
+  background-color: #222222;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.games_container > .games_title {
+  color: white;
+  margin-left: 100px;
+  margin-top: 70px;
+  margin-bottom: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+}
+.games_container > .gameOption_container {
+  height: 450px;
+  width: auto;
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  border-radius: 15px;
+  justify-content: center;
+}
+.gameOption_container > .game1 {
+  width: 570px;
+  height: 280px;
+  background-color: #222222;
+  padding: 0;
+  margin: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 2.5px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.gameOption_container > .game1:hover {
+  border: 2.5px solid white;
+}
+.gameOption_container > .game1 > .img_lolbg {
+  height: 280px;
+  width: 570px;
+  border-radius: 15px;
+  padding: 0;
+  margin: 0;
+}
+.gameOption_container > .game1 > .img_lol {
+  height: 60px;
+  width: 150px;
+  position: absolute;
+  bottom: 70%;
+  top: 30%;
+  left: 5%;
+}
+.gameOption_container > .game2 {
+  width: 570px;
+  height: 280px;
+  background-color: #222222;
+  padding: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 2.5px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.gameOption_container > .game2:hover {
+  border: 2.5px solid white;
+}
+.gameOption_container > .game2 > .img_valobg {
+  height: 280px;
+  width: 570px;
+  padding: 0;
+  margin: 0;
+}
+.gameOption_container > .game2 > .img_valoLogo {
+  height: 100px;
+  width: 140px;
+  position: absolute;
+  bottom: 70%;
+  top: 30%;
+  left: 5%;
+}
+.gameOption_container > .game3 {
+  width: 570px;
+  height: 280px;
+  background-color: #222222;
+  margin-top: -120px;
+  padding: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 2.5px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.gameOption_container > .game3:hover {
+  border: 2.5px solid white;
+}
+.gameOption_container > .game3 > .img_tacticsbg {
+  height: 280px;
+  width: 570px;
+  padding: 0;
+  margin: 0;
+}
+.gameOption_container > .game3 > .img_tacticsLogo {
+  height: 100px;
+  width: 140px;
+  position: absolute;
+  bottom: 70%;
+  top: 30%;
+  left: 5%;
+}
+.gameOption_container > .game4 {
+  width: 570px;
+  height: 280px;
+  background-color: #222222;
+  margin-top: -120px;
+  padding: 0;
+  margin-left: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 2.5px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gameOption_container > .game4:hover {
+  border: 2.5px solid white;
+}
+.gameOption_container > .game4 > .img_wildrifbg {
+  height: 280px;
+  width: 570px;
+  padding: 0;
+  margin: 0;
+}
+.gameOption_container > .game4 > .img_wildriftLogo {
+  height: 80px;
+  width: 150px;
+  position: absolute;
+  bottom: 70%;
+  top: 30%;
+  left: 5%;
+}
+.gameOption_container > .game5 {
+  width: 570px;
+  height: 280px;
+  background-color: #222222;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: -240px;
+  margin-bottom: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 2.5px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gameOption_container > .game5:hover {
+  border: 2.5px solid white;
+}
+.gameOption_container > .game5 > .img_runeterrabg {
+  height: 280px;
+  width: 570px;
+  padding: 0;
+  margin: 0;
+}
+.gameOption_container > .game5 > .img_runeterraLogo {
+  height: 80px;
+  width: 150px;
+  position: absolute;
+  bottom: 70%;
+  top: 30%;
+  left: 5%;
+}
+.esports_mainContainer {
+  position: relative;
+  margin-top: -300px;
+}
+.esports_mainContainer > .esports_container {
+  margin-left: 100px;
+  margin-top: -200px;
+}
+.esports_mainContainer > .esports_container > #esports_text {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.7rem;
+  margin-top: -150px;
+}
+.esportsOption_container {
+  height: 450px;
+  width: auto;
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  border-radius: 15px;
+  justify-content: center;
+  margin-top: 170px;
+}
+
+.esportsOption_container > .esport1 {
+  width: 570px;
+  height: 280px;
+  background-color: #222222;
+  margin-top: -120px;
+  padding: 0;
+  border-radius: 15px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  position: relative;
+  border: 2.5px solid transparent;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.esportsOption_container > .esport1:hover {
+  border: 2.5px solid white;
+}
+.esportsOption_container > .esport1 > .img_esport1bg {
+  height: 280px;
+  width: 570px;
+  padding: 0;
+  margin: 0;
+}
+.esportsOption_container > .esport1 > .img_lolLogo {
+  height: 80px;
+  width: 150px;
+  position: absolute;
+  bottom: 70%;
+  top: 30%;
+  left: 5%;
+}
+.esportsOption_container > .esport2 {
+  width: 570px;
+  height: 280px;
+  background-color: #222222;
+  margin-top: -120px;
+  margin-left: 10px;
+  padding: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 2.5px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.esportsOption_container > .esport2:hover {
+  border: 2.5px solid white;
+}
+.esportsOption_container > .esport2 > .img_esport2bg {
+  height: 280px;
+  width: 570px;
+  padding: 0;
+  margin: 0;
+}
+.esportsOption_container > .esport2 > .img_valoEsportLogo {
+  height: 80px;
+  width: 150px;
+  position: absolute;
+  bottom: 70%;
+  top: 30%;
+  left: 5%;
+}
+.RiotForge_mainContainer {
+  position: relative;
+  margin-top: -450px;
+}
+.RiotForge_mainContainer > .RiotForge_container {
+  margin-left: 100px;
+}
+.RiotForge_container > #RiotForge {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.7rem;
+  margin-top: 225px;
+}
+.RiotForgeOption_container {
+  height: 450px;
+  width: auto;
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  border-radius: 15px;
+  justify-content: center;
+  margin-top: 170px;
+}
+.RiotForgeOption_container > .RiotForge1,
+.RiotForgeOption_container > .RiotForge2,
+.RiotForgeOption_container > .RiotForge3 {
+  width: 400px;
+  height: 250px;
+  background-color: #222222;
+  margin-top: -120px;
+  margin-right: 10px;
+  padding: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 2.5px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.RiotForgeOption_container > .RiotForge1:hover,
+.RiotForgeOption_container > .RiotForge2:hover,
+.RiotForgeOption_container > .RiotForge3:hover {
+  border: 2.5px solid white;
+}
+.RiotForgeOption_container > .RiotForge1 > .img_RiotForge1bg,
+.RiotForgeOption_container > .RiotForge2 > .img_RiotForge2bg,
+.RiotForgeOption_container > .RiotForge3 > .img_RiotForge3bg {
+  height: 250px;
+  width: 400px;
+  padding: 0;
+  margin: 0;
+}
+.RiotForgeOption_container > .RiotForge1 > .img_RiotForge1Logo,
+.RiotForgeOption_container > .RiotForge2 > .img_RiotForge2Logo,
+.RiotForgeOption_container > .RiotForge3 > .img_RiotForge3Logo {
+  height: 60px;
+  width: 100px;
+  position: absolute;
+  bottom: 70%;
+  top: 30%;
+  left: 5%;
+}
+.career_container {
+  background-color: white;
+  position: relative;
+  top: -200px;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.career_container > .hiring_info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.career_container > .hiring_info > #hiring_text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 3rem;
+  margin-top: -10px;
+}
+.career_container > .hiring_info p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0 70px;
+  letter-spacing: 1.5px;
+}
+.career_container > .hiring_info > .availability_container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  margin-top: 50px;
+  padding: 0;
+}
+.career_container > .hiring_info > .availability_container > .open_positions,
+.career_container > .hiring_info > .availability_container > .offices {
+  height: 140px;
+  width: 250px;
+  background-color: #dfdede;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  border-radius: 12px;
+}
+.career_container > .hiring_info > .availability_container > .open_positions h1,
+.career_container > .hiring_info > .availability_container > .offices h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  margin-top: 10px;
+}
+.career_container > .hiring_info > .availability_container > .open_positions h2,
+.career_container > .hiring_info > .availability_container > .offices h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  margin-top: -40px;
+  color: #5d5d5a;
+}
+.career_container > .hiring_info > .career_explore {
+  height: 50px;
+  width: 220px;
+  margin-top: 50px;
+  background-color: #d1363a;
+  font-size: 1.25rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  border-radius: 15px;
+}
+.career_container > .hiring_info > .career_explore:hover {
+  background-color: #f75d59;
+}
+.hiringImg_container {
+  position: relative;
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  bottom: 0;
+  margin-right: 0;
+  padding: 0;
+  display: flex;
+}
+.hiringImg_container > .img_hiring {
+  height: 600px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+.hiringImg_container > .img_hiring > .hiring_place {
+  height: 100%;
+  width: 700px;
+}
+.footer_container {
+  margin: 0;
+  padding: 0;
+  height: 150px;
+  width: 100%;
+  margin-top: -150px;
+}
+.footer_container > .footer_upper {
+  display: flex;
+  flex-direction: row;
+}
+.footer_container > .footer_upper > .nocircle_fist {
+  height: 30px;
+  width: 38px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+}
+.footer_container > .footer_upper > .nav_down {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.footer_container > .footer_upper > .nav_down > li {
+  width: auto;
+  display: flex;
+  margin-right: 30px;
+  color: gray;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+.footer_container > .footer_upper > .nav_down > li:hover {
+  color: white;
+}
+.separator {
+  height: 2px;
+  width: 95%;
+  background-color: gray;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+}
+.footer_lower {
+  margin-left: 40px;
+  color: gray;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* For Small Screens */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    justify-content: center;
+  }
+  .Info_container,
+  .upper-right_nav > .search_container {
+    display: none;
+  }
+  .nav_container {
+    height: 90px;
+    align-items: center;
+  }
+  .riot_logo > #img_riotLogo {
+    height: 30px;
+    width: 105px;
+  }
+  .riot_secondlogo > #img_secondLogo {
+    height: 35px;
+    width: 38px;
+    margin-left: 20px;
+  }
+  .worldLogo_container > #world_logo {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  .signIn_container > #signIn_button {
+    border: 0;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+    border: 1px solid transparent;
+    margin-right: -20px;
+  }
+  .world_text {
+    display: flex;
+    justify-content: center;
+  }
+  .world_text h1 {
+    font-size: 3rem;
+  }
+  .h2_text h2 {
+    font-size: 1.7rem;
+  }
+  .h2_text {
+    justify-content: center;
+  }
+  .text3 {
+    display: none;
+  }
+  .world_text,
+  .h2_text {
+    margin-left: -20px;
+  }
+  .watchNow_container {
+    justify-content: center;
+    margin-left: 100px;
+  }
+  .hero_background {
+    height: 1000px;
+  }
+  .news_container {
+    height: 1250px;
+  }
+  .news_container > .newsHeadline_container {
+    font-size: 1.5rem;
+    width: 337px;
+    margin: 30px auto 0 auto;
+  }
+  .news_container > .newsbox_container {
+    height: auto;
+    width: auto;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .whats_happening {
+    width: 580px;
+  }
+  .whats_happening > .news_today > .news_title {
+    letter-spacing: 3px;
+    width: 550px;
+  }
+  .whats_happening > .news_today > .map_img {
+    width: 530px;
+    height: 250px;
+  }
+  .other_news {
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .other_news > .news1,
+  .other_news > .news2,
+  .other_news > .news3,
+  .other_news > .news4,
+  .other_news > .news5 {
+    width: 580px;
+  }
+  .other_news > .news1 > .img_changeID,
+  .other_news > .news3 > .img_riotSeattle,
+  .other_news > .news4 > .img_riotgamehub {
+    margin-left: 160px;
+    width: 160px;
+  }
+  .other_news > .news2 > .img_riotExec {
+    width: px;
+    margin-left: 160px;
+  }
+  .other_news > .news1 > .news1_title .other_news > .news2 > .news2title,
+  .other_news > .news3 > .news3title,
+  .other_news > .news4 > .news4title {
+    width: 400px;
+    overflow: visible;
+    text-overflow: initial;
+  }
+  .games_container {
+    height: auto;
+  }
+  .games_container > .games_title {
+    display: flex;
+    justify-content: center;
+    margin-left: -10px;
+  }
+  .games_container > .gameOption_container {
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .gameOption_container {
+    margin: 0 auto;
+    margin-top: -100px;
+  }
+  .gameOption_container > .game1,
+  .gameOption_container > .game2,
+  .gameOption_container > .game3,
+  .gameOption_container > .game4,
+  .gameOption_container > .game5 {
+    margin-top: 20px;
+    margin-left: 45px;
+  }
+  .gameOption_container > .game3 {
+    margin-top: -20px;
+    height: 200px;
+  }
+  .gameOption_container > .game4 {
+    margin-top: 25px;
+    height: 200px;
+  }
+  .gameOption_container > .game5 {
+    margin-top: -290px;
+  }
+  .gameOption_container > .game1 > .img_lolbg,
+  .gameOption_container > .game2 > .img_valobg,
+  .gameOption_container > .game3 > .img_tacticsbg,
+  .gameOption_container > .game4 > .img_wildriftbg,
+  .gameOption_container > .game5 > .img_runeterrabg {
+    width: 570px;
+    height: 201px;
+  }
+  .gameOption_container > .game5 {
+    height: 201px;
+  }
+  .esports_mainContainer {
+    margin-top: -150px;
+  }
+  .esports_mainContainer > .esports_container {
+    margin-top: -200px;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .esportsOption_container {
+    margin-top: 160px;
+    flex-direction: column;
+    margin-left: 45px;
+  }
+  .esportsOption_container > .esport2 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .RiotForge_mainContainer {
+    margin-top: 0;
+  }
+  .RiotForge_mainContainer > .RiotForge_container {
+    margin-top: -150px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .RiotForgeOption_container {
+    height: 950px;
+    margin-top: -60px;
+    flex-direction: column;
+    margin-bottom: 200px;
+  }
+  .RiotForgeOption_container > .RiotForge1,
+  .RiotForgeOption_container > .RiotForge2,
+  .RiotForgeOption_container > .RiotForge3 {
+    width: 450px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .RiotForgeOption_container > .RiotForge1 > .img_RiotForge1bg,
+  .RiotForgeOption_container > .RiotForge2 > .img_RiotForge2bg,
+  .RiotForgeOption_container > .RiotForge3 > .img_RiotForge3bg {
+    width: 450px;
+  }
+  .career_container {
+    flex-direction: column;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+  }
+  .career_container > .hiring_info {
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .hiringImg_container > .img_hiring {
+    height: 500px;
+    width: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .career_container > .hiring_info > .career_explore {
+    width: 520px;
+    height: 60px;
+  }
+  .footer_container {
+    margin-bottom: 100px;
+  }
+  .footer_container > .footer_upper {
+    flex-direction: column;
+  }
+  .footer_container > .footer_upper > .nocircle_fist {
+    margin: 0 auto;
+  }
+  .footer_container > .footer_upper > .nav_down {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    justify-content: center;
+  }
+  .footer_container > .footer_upper > .nav_down > li {
+    margin-top: 10px;
+  }
+  .footer_lower {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
