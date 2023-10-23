@@ -36,12 +36,12 @@ body {
   border: 0;
   margin: 0;
 }
-.riot_logo > #img_riotLogo {
+.riot_logo > #img_link > #img_riotLogo {
   height: 24px;
   width: 95px;
   cursor: pointer;
 }
-.riot_logo > #img_riotLogo:hover {
+.riot_logo > #img_link > #img_riotLogo:hover {
   content: url("images/logo_red.png");
 }
 .fistLogo_container div {
