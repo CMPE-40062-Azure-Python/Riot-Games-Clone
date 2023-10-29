@@ -24,9 +24,13 @@ body {
   border: 0;
   padding: 0;
   display: flex;
-  background-color: #111111;
+  background-color: transparent;
+  transition: 0.1s;
   z-index: 100;
-  transition: 3s;
+}
+.nav_scrolled {
+  background-color: #111111;
+  transition: 0.1s;
 }
 .riot_logo {
   display: inline-flex;
@@ -83,6 +87,7 @@ body {
   letter-spacing: 1.5px;
   background-color: transparent;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
@@ -92,6 +97,12 @@ body {
   color: white;
   padding: 5px;
   border-radius: 5px;
+}
+#InfoList li > .dropdownAboutUs,
+#InfoList li > .dropdownNewsUs{
+  height: 10px;
+  width: 10px;
+  margin-left: 5px;
 }
 .upper-right_nav {
   position: absolute;
@@ -107,8 +118,8 @@ body {
   margin-right: 20px;
 }
 .upper-right_nav > .worldLogo_container > #world_logo {
-  height: 32px;
-  width: 32px;
+  height: 27px;
+  width: 27px;
   padding: 5px;
   background-color: transparent;
   border-radius: 5px;
@@ -127,14 +138,22 @@ body {
 .upper-right_nav > .search_container > .search_box {
   border: 1px solid white;
   background-color: #282828;
-  padding: 8px;
-  border-radius: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 30px;
+  border-radius: 15px;
   font-size: 0.9rem;
   color: white;
+  width: 160px;
 }
-.upper-right_nav > .search_box::placeholder {
+.search_box::placeholder {
   font-size: 12px;
-  padding: 10px;
+}
+.upper-right_nav > .search_container > .search_icon {
+  height: 22px;
+  width: 22px;
+  margin-left: -30px;
 }
 .upper-right_nav > .signIn_container {
   padding: 0;
@@ -145,7 +164,7 @@ body {
 .upper-right_nav > .signIn_container > #signIn_button {
   border: 0;
   background-color: red;
-  padding: 10px;
+  padding: 7px;
   border-radius: 20px;
   width: 100px;
   border: 1px solid transparent;
@@ -439,9 +458,10 @@ h1 {
   margin-bottom: 20px;
 }
 
-.text-content {
+.text-content p{
   flex: 2;
-  text-align: center;
+  text-align: justify;
+
 }
 
 .section5-container {
@@ -691,4 +711,7 @@ ul.left li:hover {
 .button:hover {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
+}
+.right-text {
+  cursor: pointer;
 }

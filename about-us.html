@@ -8,7 +8,7 @@
     <!-- Credits to ZHARXD_ (https://www.youtube.com/@zharxd_) for the amazing Valorant video edit -->
   </head>
   <body>
-    <div class="nav_container">
+    <div id="nav_ContainerAboutUs" class="nav_container">
       <div class="riot_logo">
         <a id="img_link" href="index.html"><img id="img_riotLogo" src="images/white_logo.png" alt="Riot Logo" /></a>
       </div>
@@ -20,8 +20,8 @@
       <div class="Info_container">
         <div class="info_list">
           <ul id="InfoList">
-            <li><a href="about-us.html" style="text-decoration: none; color: white;">ABOUT US</a></li>
-            <li><a href="news.html" style="text-decoration: none; color: white;">NEWS</a></li>
+            <li><a href="about-us.html" style="text-decoration: none; color: white;">ABOUT US</a><img class="dropdownAboutUs" src="images/dropdown_gray.png" alt="ABOUT US DROP DOWN"/></li>
+            <li><a href="news.html" style="text-decoration: none; color: white;">NEWS</a><img class="dropdownNewsUs" src="images/dropdown_gray.png" alt="NEWS DROP DOWN"/></li>
           </ul>
         </div>
       </div>
@@ -31,6 +31,7 @@
         </div>
         <div class="search_container">
           <input class="search_box" type="text" placeholder="SEARCH..." />
+          <img class="search_icon" src="images/white_search.png" alt="SEARCH ICON"/>
         </div>
         <div class="signIn_container">
           <button id="signIn_button">SIGN IN</button>
@@ -316,12 +317,13 @@
             <div class="left-text">
               <p>Azure Python | All rights reserved 2023.</p>
             </div>
-            <div class="right-text">
+            <div id="to_surfaceAboutUs" class="right-text">
               TO THE SURFACE ▲
             </div>
           </div>
         </footer>
       </div>
     </main>
+    <script src="about-us.js"></script>
   </body>
 </html>
