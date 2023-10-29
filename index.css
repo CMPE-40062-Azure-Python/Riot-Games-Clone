@@ -292,6 +292,32 @@ body {
   margin-left: 200px;
   margin-top: 60px;
 }
+.news_container > .seeMore {
+  height: 50px;
+  width: 100%;
+  margin-top: -50px;
+  display: flex;
+  justify-content: end;
+}
+.news_container > .seeMore button {
+  background-color: #222222;
+  padding: 10px;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  width: 90px;
+  height: 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 110px;
+}
+.news_container > .seeMore button:hover {
+  border: 1px solid white;
+}
 .news_container > .newsbox_container {
   height: auto;
   width: auto;

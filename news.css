@@ -424,25 +424,22 @@ cursor: pointer;
   background: red;
   bottom: 0;
   left: 0;
-  transition: width 0.3s; /* Add a smooth transition effect */
-  z-index: -1; /* Place it behind the text */
+  transition: width 0.3s; 
+  z-index: -1; 
 }
 
 /* Hover effect */
 .dropdown_option ul li:hover::before {
   width: 100%; /* Expand the underline to the full width on hover */
 }
-
-/* Other list item styles */
 .dropdown_option ul li {
   text-decoration: none;
-  position: relative; /* Create a stacking context */
+  position: relative; 
   margin-top: 25px;
   color: white;
   cursor: pointer;
 }
 
-/* Remove text decoration from list items */
 .dropdown_option ul li {
   display: inline;
   padding: 0 10px;

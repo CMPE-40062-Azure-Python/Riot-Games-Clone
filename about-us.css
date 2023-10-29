@@ -8,6 +8,7 @@
 body {
   font-family: "Mark Pro", Arial, sans-serif;
   margin: 0;
+  background-color: #222222;
 }
 
 .nav_container div {
@@ -332,6 +333,7 @@ main {
 .text-center {
   text-align: center;
   width: 100%;
+  
 }
 
 .video-background {
@@ -442,7 +444,7 @@ h1 {
   display: flex;
   position: relative;
   background-size: cover;
-  min-height: 120vh;
+  min-height: 120vhx;
   flex-direction: column;
   justify-content: flex-start;
   background-size: cover;
@@ -525,10 +527,41 @@ h1 {
   color: white;
 }
 
+.row_container {
+  height: auto;
+  width: 1000px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1s;
+}
+.hidden {
+  opacity: 0;
+  display: none;
+}
+.row_container2 {
+  height: auto;
+  width: 1000px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+}
+.row_container3 {
+  height: auto;
+  width: 1000px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 .row {
+  height: auto;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 
 .location-container {
@@ -546,13 +579,12 @@ h1 {
 .info-column {
   flex: 2;
   text-align: center; /* Center the content in this column */
-  margin-right: 100px;
+  margin-right: 200px;
 }
 
 .open-positions-column {
   flex: 1;
   text-align: center; /* Right-align the content in this column */
-  margin-right: 100px;
 }
 
 footer {

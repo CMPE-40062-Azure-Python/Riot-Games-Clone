@@ -30,3 +30,9 @@ scrollToTop.addEventListener('click', () => {
         behavior: "smooth",
     });
 });
+
+const Seemore = document.getElementById("SeeMore");
+
+Seemore.addEventListener('click', function () {
+    window.location.href = 'news.html';
+});
