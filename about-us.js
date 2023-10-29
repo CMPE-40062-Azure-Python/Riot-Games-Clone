@@ -159,7 +159,30 @@ const newData = [
     currentIndex = (currentIndex + 3) % newData.length;
   }
   
-  
   // Update the rows every 5 seconds
   setInterval(updateRows, 5000);
+
+
+  
+  // For Nav Bar
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach((dropdown) => {
+  let isHovered = false;
+  dropdown.addEventListener('mouseenter', () => {
+    isHovered = true;
+    const dropdownContent = dropdown.querySelector('.dropdown_content');
+    dropdownContent.style.display = 'block';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    isHovered = false;
+    const dropdownContent = dropdown.querySelector('.dropdown_content');
+    setTimeout(() => {
+      if (!isHovered) {
+        dropdownContent.style.display = 'none';
+      }
+    }, 200); //Delay time
+  });
+});
 

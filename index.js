@@ -36,3 +36,26 @@ const Seemore = document.getElementById("SeeMore");
 Seemore.addEventListener('click', function () {
     window.location.href = 'news.html';
 });
+
+
+// For Nav Bar
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach((dropdown) => {
+  let isHovered = false;
+  dropdown.addEventListener('mouseenter', () => {
+    isHovered = true;
+    const dropdownContent = dropdown.querySelector('.dropdown_content');
+    dropdownContent.style.display = 'block';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    isHovered = false;
+    const dropdownContent = dropdown.querySelector('.dropdown_content');
+    setTimeout(() => {
+      if (!isHovered) {
+        dropdownContent.style.display = 'none';
+      }
+    }, 200); //Delay time
+  });
+});
