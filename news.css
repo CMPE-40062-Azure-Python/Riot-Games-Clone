@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #222222;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: "Mark Pro";
@@ -345,9 +346,8 @@ body {
 
 .custom-box {
   margin-top: 80px;
-  width: 97.5%;
-  height: 98px;
-  margin: 20px auto 0;
+  width: 100%;
+  height: 140px;
   background-color: rgba(240, 240, 240, 0); /* Transparent background */
   display: flex;
   justify-content: center;
@@ -360,30 +360,93 @@ body {
 }
 #showMe {
   color: rgb(101, 100, 98);
-  margin-top: 160px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
-.collapsible-label {
+#everything {
   color: #ffffff; /* White color */
-  margin-top: 160px;
 }
-.collapsible-content {
-  display: none;
-}
-.collapsible-label:hover {
+#NewsDropdown {
+  height: 12px;
+  width: 12px;
+  margin-left: 10px;
   cursor: pointer;
 }
-.collapsible-label::after {
-  content: "˅";
-  display: inline-block;
-  color: rgb(101, 100, 98);
-  margin-left: 5px;
+.dropdown_option {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/explore-hero-bg--large.jpg");
+  display: none; /* Initially hidden */
+  z-index: -1;
 }
-.collapsible-content.active {
-  display: block;
+.ximg {
+  display: flex;
+  justify-content: end;
+  margin-right: 70px;
 }
-.collapsible-label.active::after {
-  content: "˄";
+.ximg > #x_button {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+}
+.ximg > #x_button:hover {
+  content: url(images/red_x.png);
+}
+ span#filter {
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  left: 70px;
+}
+.dropdown_option ul{
+  list-style: none;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  margin-left: 150px;
+  margin-top: -10px;
+}
+.dropdown_option li {
+margin-top: 25px;
+color: white;
+cursor: pointer;
+}
+
+.dropdown_option ul li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: red;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s; /* Add a smooth transition effect */
+  z-index: -1; /* Place it behind the text */
+}
+
+/* Hover effect */
+.dropdown_option ul li:hover::before {
+  width: 100%; /* Expand the underline to the full width on hover */
+}
+
+/* Other list item styles */
+.dropdown_option ul li {
+  text-decoration: none;
+  position: relative; /* Create a stacking context */
+  margin-top: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Remove text decoration from list items */
+.dropdown_option ul li {
+  display: inline;
+  padding: 0 10px;
+  font-weight: bold;
 }
 
 .custom-box-responsive {

@@ -29,3 +29,30 @@ scrollToTop.addEventListener('click', () => {
         behavior: "smooth",
     });
 });
+
+
+//Dropdown Button 
+  const  newsDropdown = document.getElementById("NewsDropdown");
+  const options = document.getElementById("options");
+
+  options.style.display = "none"; // Initial state of Options
+
+  newsDropdown.addEventListener("click", function () {
+    if (options.style.display === "none") {
+      options.style.display = "block";
+      options.style.zIndex = 100;
+    } else {
+      options.style.display = "none";
+      background.style.display = "none";
+    }
+  });
+
+  // X Button Inside Options
+  const xButton = document.getElementById("x_button");
+
+  xButton.addEventListener('click', function () {
+    options.style.display = "none";
+  });
+
+
+  
