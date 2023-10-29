@@ -31,7 +31,37 @@ scrollToTop.addEventListener('click', () => {
 });
 
 
-const Data = [
+const newData = [
+    {
+      imageId: 'image1',
+      headingId: 'h31',
+      paragraphId: 'p1',
+      openId: 'open1',
+      imageUrl: 'images/dubai.jpg',
+      headingText: 'Dubai',
+      paragraphText: 'UAE',
+      openText: '3',
+    },
+    {
+      imageId: 'image2',
+      headingId: 'h32',
+      paragraphId: 'p2',
+      openId: 'open2',
+      imageUrl: 'images/sydney.jpg',
+      headingText: 'Sydney',
+      paragraphText: 'Australia',
+      openText: '2',
+    },
+    {
+      imageId: 'image3',
+      headingId: 'h33',
+      paragraphId: 'p3',
+      openId: 'open3',
+      imageUrl: 'images/singapore.jpg',
+      headingText: 'Singapore',
+      paragraphText: 'Singapore',
+      openText: '1'
+    },
     {
         imageId: 'image1',
         headingId: 'h31',
@@ -92,44 +122,13 @@ const Data = [
         paragraphText: 'Paris',
         openText: '7',
       },
-      {
-        imageId: 'image1',
-        headingId: 'h31',
-        paragraphId: 'p1',
-        openId: 'open1',
-        imageUrl: 'images/dubai.jpg',
-        headingText: 'Dubai',
-        paragraphText: 'UAE',
-        openText: '3',
-      },
-      {
-        imageId: 'image2',
-        headingId: 'h32',
-        paragraphId: 'p2',
-        openId: 'open2',
-        imageUrl: 'images/sydney.jpg',
-        headingText: 'Sydney',
-        paragraphText: 'Australia',
-        openText: '2',
-      },
-      {
-        imageId: 'image3',
-        headingId: 'h33',
-        paragraphId: 'p3',
-        openId: 'open3',
-        imageUrl: 'images/singapore.jpg',
-        headingText: 'Singapore',
-        paragraphText: 'Singapore',
-        openText: '1'
-      },
   ];
   
   let currentIndex = 0;
   
   function updateRows() {
-
     for (let i = 0; i < 3; i++) {
-      const data = Data[currentIndex + i];
+      const data = newData[currentIndex + i];
        // Get the elements
     const image = document.getElementById(data.imageId);
     const heading = document.getElementById(data.headingId);
@@ -160,5 +159,7 @@ const Data = [
     currentIndex = (currentIndex + 3) % newData.length;
   }
   
-  // Update the rows every 3 seconds
+  
+  // Update the rows every 5 seconds
   setInterval(updateRows, 5000);
+
