@@ -123,6 +123,30 @@ body {
   width: 140px;
   margin-top: 5px;
 }
+.worldLogo_container > .language_option {
+  display: none;
+  list-style: none;
+  width: 160px;
+  height: 250px;
+  position: absolute;
+  background-color: whitesmoke;
+  color: #ABB0B8;
+  z-index: 1;
+  margin-top: 320px;
+  margin-left: -80px;
+  padding-left: 40px;
+  overflow-y: auto;
+}
+.worldLogo_container > .language_option li {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 15px;
+  padding: 0;
+  cursor: pointer;
+}
+.worldLogo_container > .language_option li:hover {
+  color: black;
+}
 .upper-right_nav {
   position: absolute;
   top: 0;

@@ -38,7 +38,7 @@ Seemore.addEventListener('click', function () {
 });
 
 
-// For Nav Bar
+// For Nav Bar Hover
 const dropdowns = document.querySelectorAll('.dropdown');
 
 dropdowns.forEach((dropdown) => {
@@ -58,4 +58,27 @@ dropdowns.forEach((dropdown) => {
       }
     }, 200); //Delay time
   });
+});
+
+// World Logo - Language Container
+
+const WorldLogo = document.getElementById("world_logo");
+const LanguageOption = document.getElementById("language_option");
+let isOpen = false; // Display State to None
+
+WorldLogo.addEventListener('click', function (event) {
+  if (!isOpen) {
+    LanguageOption.style.display = 'block';
+    isOpen = true; // Show Container
+  } else {
+    LanguageOption.style.display = 'none';
+    isOpen = false;
+  }
+  event.stopPropagation();
+});
+
+// Language Option Hide When Anything in the Screen is Clicked
+document.addEventListener('click', function () {
+  LanguageOption.style.display = 'none';
+  isOpen = false;
 });
