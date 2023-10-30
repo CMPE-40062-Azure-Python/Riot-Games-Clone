@@ -299,7 +299,10 @@ body {
   justify-content: center;
   font-size: 2rem;
 }
-.watchNow_container > #WatchNow_button {
+.watchNow_container > a {
+  text-decoration: none;
+}
+.watchNow_container > a #WatchNow_button {
   background-color: #1fa4d0;
   padding: 10px;
   border: 1px solid wheat;
@@ -313,7 +316,7 @@ body {
   justify-content: center;
   cursor: pointer;
 }
-.watchNow_container > #WatchNow_button:hover {
+.watchNow_container > a #WatchNow_button:hover {
   border: 1px solid black;
   color: black;
 }
@@ -962,6 +965,9 @@ body {
   height: 40px;
   width: 40px;
   margin: 10px;
+}
+.RiotForge_mainContainer > .nextback_arrows img:hover {
+  cursor: pointer;
 }
 .RiotForge_mainContainer > .RiotForge_container {
   margin-left: 100px;
