@@ -82,3 +82,60 @@ document.addEventListener('click', function () {
   LanguageOption.style.display = 'none';
   isOpen = false;
 });
+
+// Riot Forge Side Scroll
+
+const RiotForge_Option = document.getElementById("RiotForgeOption_container");
+const items = RiotForge_Option.children; // Uses the children of RiotForgeOption_container
+const ArrowLeft = document.getElementById("arrowLeft");
+const ArrowRight = document.getElementById("arrowRight");
+
+let currentIndex = 0; // Initial
+const itemsDisplay = 3; // Items to Display
+
+function ArrowUpdate() {
+  ArrowLeft.style.display = 'block';
+  ArrowRight.style.display = 'block';
+
+  if (currentIndex === 0) {
+    ArrowLeft.src = 'images/arrowLeft_black.png'; // Black since index on Left is 0
+    ArrowRight.src = 'images/arrow_right.png'; 
+  } else if (currentIndex + itemsDisplay >= items.length) {
+    ArrowLeft.src = 'images/arrow_left.png'; 
+    ArrowRight.src = 'images/arrowRight_black.png'; // Black since index on Right is 0
+  } else {
+    ArrowLeft.src = 'images/arrow_left.png'; 
+    ArrowRight.src = 'images/arrow_right.png'; 
+  }
+}
+
+// Displays Item Using for loop
+function UpdateItemDisplay() {
+  for (let i = 0; i < items.length; i++) {
+    if (i >= currentIndex && i < currentIndex + itemsDisplay) {
+      items[i].style.display = 'block';
+    } else {
+      items[i].style.display = 'none';
+    }
+  }
+}
+
+ArrowUpdate();
+UpdateItemDisplay();
+
+// Arrow Click Logic
+ArrowRight.addEventListener('click', function () {
+  if (currentIndex < 2) {
+    currentIndex++;
+    ArrowUpdate();
+    UpdateItemDisplay();
+  }
+});
+
+ArrowLeft.addEventListener('click', function () {
+  if (currentIndex > 0) {
+    currentIndex--;
+    ArrowUpdate();
+    UpdateItemDisplay();
+  }
+});

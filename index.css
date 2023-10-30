@@ -950,7 +950,18 @@ body {
 }
 .RiotForge_mainContainer {
   position: relative;
-  margin-top: -450px;
+  margin-top: -150px;
+}
+.RiotForge_mainContainer > .nextback_arrows {
+ margin-bottom: -300px;
+  display: flex;
+  justify-content: end;
+  margin-right: 60px;
+}
+.RiotForge_mainContainer > .nextback_arrows img {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
 }
 .RiotForge_mainContainer > .RiotForge_container {
   margin-left: 100px;
@@ -973,7 +984,9 @@ body {
 }
 .RiotForgeOption_container > .RiotForge1,
 .RiotForgeOption_container > .RiotForge2,
-.RiotForgeOption_container > .RiotForge3 {
+.RiotForgeOption_container > .RiotForge3,
+.RiotForgeOption_container > .RiotForge4,
+.RiotForgeOption_container > .RiotForge5 {
   width: 400px;
   height: 250px;
   background-color: #222222;
@@ -990,12 +1003,16 @@ body {
 }
 .RiotForgeOption_container > .RiotForge1:hover,
 .RiotForgeOption_container > .RiotForge2:hover,
-.RiotForgeOption_container > .RiotForge3:hover {
+.RiotForgeOption_container > .RiotForge3:hover,
+.RiotForgeOption_container > .RiotForge4:hover,
+.RiotForgeOption_container > .RiotForge5:hover {
   border: 2.5px solid white;
 }
 .RiotForgeOption_container > .RiotForge1 > .img_RiotForge1bg,
 .RiotForgeOption_container > .RiotForge2 > .img_RiotForge2bg,
-.RiotForgeOption_container > .RiotForge3 > .img_RiotForge3bg {
+.RiotForgeOption_container > .RiotForge3 > .img_RiotForge3bg,
+.RiotForgeOption_container > .RiotForge4 > .img_RiotForge4bg,
+.RiotForgeOption_container > .RiotForge5 > .img_RiotForge5bg {
   height: 250px;
   width: 400px;
   padding: 0;
@@ -1003,7 +1020,9 @@ body {
 }
 .RiotForgeOption_container > .RiotForge1 > .img_RiotForge1Logo,
 .RiotForgeOption_container > .RiotForge2 > .img_RiotForge2Logo,
-.RiotForgeOption_container > .RiotForge3 > .img_RiotForge3Logo {
+.RiotForgeOption_container > .RiotForge3 > .img_RiotForge3Logo,
+.RiotForgeOption_container > .RiotForge4 > .img_RiotForge4Logo,
+.RiotForgeOption_container > .RiotForge5 > .img_RiotForge5Logo {
   height: 60px;
   width: 100px;
   position: absolute;
@@ -1167,7 +1186,7 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-footer {
+.footer {
   background-color: #252423;
   color: #ffffff;
   height: 195px;
