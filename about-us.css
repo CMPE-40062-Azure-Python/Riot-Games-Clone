@@ -398,8 +398,35 @@ main {
 
 .red-box {
   background-color: #cc3030;
+  height: 30px;
+  width: 0;
   display: inline-block;
-  padding: 10px 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: slideIn 2s forwards;
+}
+
+.red-box span {
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  left: -100%;
+  animation: slideRight 2s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    width: 135px;
+  }
+}
+
+@keyframes slideRight {
+  to {
+    left: 0;
+  }
 }
 
 h1 {
