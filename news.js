@@ -47,7 +47,7 @@ newsDropdown.addEventListener("click", function () {
   }
 });
 
-// X Button Inside Options
+// X Button Inside Filter
 const xButton = document.getElementById("x_button");
 
 xButton.addEventListener('click', function () {
