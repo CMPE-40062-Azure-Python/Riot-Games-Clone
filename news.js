@@ -220,3 +220,35 @@ document.addEventListener('click', function () {
   LanguageOption.style.display = 'none';
   isOpen = false;
 });
+
+// List of keywords and corresponding section IDs
+const keywords = {
+  "Everything": "custom-box-Responsive",
+  "News": "custom-box-5",
+  "Offices": "custom-box-3",
+  "Disciplines": "custom-box-7",
+  "Inside Riot": "custom-box-2",
+  "One Shot": "custom-box-3",
+  "Tech Blog": "custom-box-2"
+};
+
+const searchBox = document.querySelector(".search_box");
+const searchIcon = document.querySelector(".search_icon");
+
+searchIcon.addEventListener("click", function () {
+  const keyword = searchBox.value.trim();
+
+  if (keywords.hasOwnProperty(keyword)) {
+    // Scroll to the section with the matching keyword
+    const sectionId = keywords[keyword];
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  } else {
+    // Keyword not found, show the list of keywords to use
+    const keywordList = Object.keys(keywords).join(", ");
+    alert("Keyword not found. List of keywords to use: " + keywordList);
+  }
+});

@@ -292,7 +292,8 @@ searchIcon.addEventListener("click", function () {
       section.scrollIntoView({ behavior: "smooth" });
     }
   } else {
-    // Keyword not found, you can handle this case as needed
-    alert("Keyword not found");
+    // Keyword not found, show the list of keywords to use
+    const keywordList = Object.keys(keywords).join(", ");
+    alert("Keyword not found. List of keywords to use: " + keywordList);
   }
 });
