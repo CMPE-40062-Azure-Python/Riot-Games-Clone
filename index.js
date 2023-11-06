@@ -1,30 +1,29 @@
 // For Navigation Bar
 
-const navContainer = document.getElementById('nav_ContainerIndex') // Calling Nav Container ID
+const navContainer = document.getElementById("nav_ContainerIndex"); // Calling Nav Container ID
 
 let isAtTop = true; // Checks if current page is at the top
 
 // Scroll Event
-window.addEventListener('scroll', () => {
-
+window.addEventListener("scroll", () => {
   const currentScrollpos = window.pageYOffset; // current scroll position vertically
 
   // Checks if it scrolled
   if (currentScrollpos > 0) {
-    navContainer.classList.add('nav_scrolled');
+    navContainer.classList.add("nav_scrolled");
     isAtTop = false;
   } else if (!isAtTop) {
-    navContainer.classList.remove('nav_scrolled');
+    navContainer.classList.remove("nav_scrolled");
     isAtTop = true;
   }
 });
 
 // To The Surface
 
-const scrollToTop = document.getElementById('to_surfaceIndex')
+const scrollToTop = document.getElementById("to_surfaceIndex");
 
 // Add Click Event on To The Surface
-scrollToTop.addEventListener('click', () => {
+scrollToTop.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
@@ -33,28 +32,27 @@ scrollToTop.addEventListener('click', () => {
 
 const Seemore = document.getElementById("SeeMore");
 
-Seemore.addEventListener('click', function () {
-  window.location.href = 'news.html';
+Seemore.addEventListener("click", function () {
+  window.location.href = "news.html";
 });
 
-
 // For Nav Bar Hover
-const dropdowns = document.querySelectorAll('.dropdown');
+const dropdowns = document.querySelectorAll(".dropdown");
 
 dropdowns.forEach((dropdown) => {
   let isHovered = false;
-  dropdown.addEventListener('mouseenter', () => {
+  dropdown.addEventListener("mouseenter", () => {
     isHovered = true;
-    const dropdownContent = dropdown.querySelector('.dropdown_content');
-    dropdownContent.style.display = 'block';
+    const dropdownContent = dropdown.querySelector(".dropdown_content");
+    dropdownContent.style.display = "block";
   });
 
-  dropdown.addEventListener('mouseleave', () => {
+  dropdown.addEventListener("mouseleave", () => {
     isHovered = false;
-    const dropdownContent = dropdown.querySelector('.dropdown_content');
+    const dropdownContent = dropdown.querySelector(".dropdown_content");
     setTimeout(() => {
       if (!isHovered) {
-        dropdownContent.style.display = 'none';
+        dropdownContent.style.display = "none";
       }
     }, 200); //Delay time
   });
@@ -66,20 +64,20 @@ const WorldLogo = document.getElementById("world_logo");
 const LanguageOption = document.getElementById("language_option");
 let isOpen = false; // Display State to None
 
-WorldLogo.addEventListener('click', function (event) {
+WorldLogo.addEventListener("click", function (event) {
   if (!isOpen) {
-    LanguageOption.style.display = 'block';
+    LanguageOption.style.display = "block";
     isOpen = true; // Show Container
   } else {
-    LanguageOption.style.display = 'none';
+    LanguageOption.style.display = "none";
     isOpen = false;
   }
   event.stopPropagation();
 });
 
 // Language Option Hide When Anything in the Screen is Clicked
-document.addEventListener('click', function () {
-  LanguageOption.style.display = 'none';
+document.addEventListener("click", function () {
+  LanguageOption.style.display = "none";
   isOpen = false;
 });
 
@@ -94,18 +92,18 @@ let currentIndex = 0; // Initial
 const itemsDisplay = 3; // Items to Display
 
 function ArrowUpdate() {
-  ArrowLeft.style.display = 'block';
-  ArrowRight.style.display = 'block';
+  ArrowLeft.style.display = "block";
+  ArrowRight.style.display = "block";
 
   if (currentIndex === 0) {
-    ArrowLeft.src = 'images/arrowLeft_black.png'; // Black since index on Left is 0
-    ArrowRight.src = 'images/arrow_right.png';
+    ArrowLeft.src = "images/arrowLeft_black.png"; // Black since index on Left is 0
+    ArrowRight.src = "images/arrow_right.png";
   } else if (currentIndex + itemsDisplay >= items.length) {
-    ArrowLeft.src = 'images/arrow_left.png';
-    ArrowRight.src = 'images/arrowRight_black.png'; // Black since index on Right is 0
+    ArrowLeft.src = "images/arrow_left.png";
+    ArrowRight.src = "images/arrowRight_black.png"; // Black since index on Right is 0
   } else {
-    ArrowLeft.src = 'images/arrow_left.png';
-    ArrowRight.src = 'images/arrow_right.png';
+    ArrowLeft.src = "images/arrow_left.png";
+    ArrowRight.src = "images/arrow_right.png";
   }
 }
 
@@ -113,9 +111,9 @@ function ArrowUpdate() {
 function UpdateItemDisplay() {
   for (let i = 0; i < items.length; i++) {
     if (i >= currentIndex && i < currentIndex + itemsDisplay) {
-      items[i].style.display = 'block';
+      items[i].style.display = "block";
     } else {
-      items[i].style.display = 'none';
+      items[i].style.display = "none";
     }
   }
 }
@@ -124,7 +122,7 @@ ArrowUpdate();
 UpdateItemDisplay();
 
 // Arrow Click Logic
-ArrowRight.addEventListener('click', function () {
+ArrowRight.addEventListener("click", function () {
   if (currentIndex < 2) {
     currentIndex++;
     ArrowUpdate();
@@ -132,7 +130,7 @@ ArrowRight.addEventListener('click', function () {
   }
 });
 
-ArrowLeft.addEventListener('click', function () {
+ArrowLeft.addEventListener("click", function () {
   if (currentIndex > 0) {
     currentIndex--;
     ArrowUpdate();
@@ -145,9 +143,9 @@ const keywords = {
   "WORLDS 2023": "WORLDS2023",
   "What's Happening": "WhatsHappening",
   "Our Values": "OurValues",
-  "Esports": "Esports",
+  Esports: "Esports",
   "Riot Forge": "RiotForge",
-  "We're hiring!": "Werehiring"
+  "We're hiring!": "Werehiring",
 };
 
 const searchBox = document.querySelector(".search_box");
