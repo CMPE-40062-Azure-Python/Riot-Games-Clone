@@ -56,7 +56,7 @@ This project utilizes the following technologies:
 ##### Added JS Features
 
 - Navigation Bar Scrolling: Adds a class to the navigation container when the user scrolls down the page to change its appearance.
-  ![Navigation Bar Scrolling](images\JS FEATURES IMAGES\Navigation Bar Scrolling.png)
+  ![Navigation Bar Scrolling](images/JS FEATURES IMAGES/Navigation Bar Scrolling.png)
 - Nav Bar Hover Effect: Adds hover effects to navigation dropdown menus.
 - "To The Surface" Button: Scrolls the page to the top smoothly when the button is clicked.
 - Dynamic Content Update: Rotates and updates content in sections every 5 seconds.
