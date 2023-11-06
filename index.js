@@ -144,7 +144,7 @@ ArrowLeft.addEventListener('click', function () {
 const keywords = {
   "WORLDS 2023": "WORLDS2023",
   "What's Happening": "WhatsHappening",
-  "GAMES": "GAMES",
+  "Our Values": "OurValues",
   "Esports": "Esports",
   "Riot Forge": "RiotForge",
   "We're hiring!": "Werehiring"
@@ -169,4 +169,3 @@ searchIcon.addEventListener("click", function () {
     alert("Keyword not found");
   }
 });
-

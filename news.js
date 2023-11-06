@@ -220,33 +220,3 @@ document.addEventListener('click', function () {
   LanguageOption.style.display = 'none';
   isOpen = false;
 });
-
-// List of keywords and corresponding section IDs
-const keywords = {
-  "WORLDS 2023": "WORLDS2023",
-  "What's Happening": "WhatsHappening",
-  "GAMES": "GAMES",
-  "Esports": "Esports",
-  "Riot Forge": "RiotForge",
-  "We're hiring!": "Werehiring"
-};
-
-const searchBox = document.querySelector(".search_box");
-const searchIcon = document.querySelector(".search_icon");
-
-searchIcon.addEventListener("click", function () {
-  const keyword = searchBox.value.trim();
-
-  if (keywords.hasOwnProperty(keyword)) {
-    // Scroll to the section with the matching keyword
-    const sectionId = keywords[keyword];
-    const section = document.getElementById(sectionId);
-
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  } else {
-    // Keyword not found, you can handle this case as needed
-    alert("Keyword not found");
-  }
-});
