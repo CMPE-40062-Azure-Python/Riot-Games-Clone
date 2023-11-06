@@ -8,6 +8,10 @@
 - [Features](#features)
   - [Included Web Pages](#included-web-pages)
   - [Technologies Used](#technologies-used)
+  - [HTML][#html]
+  - [CSS][#css]
+  - [Javscript][#javascript]
+    - [Added JS Features] [#added-js-features]
 - [Getting Started](#getting-started)
   - [Access to the Repository](#access-to-the-repository)
   - [Install and run Locally](#install-and-run-locally)
@@ -48,6 +52,22 @@ This project utilizes the following technologies:
 #### JavaScript
 
 - Implemented for adding interactive features and dynamic content.
+
+##### Added JS Features
+
+- Navigation Bar Scrolling: Adds a class to the navigation container when the user scrolls down the page to change its appearance.
+  ![GitHub Logo](https://github.com/logos/github-logo.png)
+- "To The Surface" Button: Scrolls the page to the top smoothly when the button is clicked.
+- Dynamic Content Update: Rotates and updates content in sections every 5 seconds.
+- Dropdown Hover Effect: Adds hover effects to navigation dropdown menus.
+- World Logo - Language Container: Toggles the display of a language options container when the world logo is clicked.
+- Search Box for Scrolling to Sections: Allows users to enter keywords and scroll to corresponding sections.
+- List of Keywords Alert: Displays an alert with a list of valid keywords when an entered keyword is not found.
+- "See More" Link: Redirects the user to the "news.html" page when clicked.
+- Riot Forge Side Scroll: Allows horizontal scrolling through items with left and right arrows.
+- News Filter: Allows users to filter news content by different categories.
+- X Button Inside Options: Closes the options dropdown when the "X" button is clicked.
+- Nav Bar Hover Effect: Adds hover effects to navigation dropdown menus.
 
 [&#9650; Back to the Top](#riot-games-website-clone)
 
