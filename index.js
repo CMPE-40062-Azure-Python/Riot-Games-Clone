@@ -5,18 +5,18 @@ const navContainer = document.getElementById('nav_ContainerIndex') // Calling Na
 let isAtTop = true; // Checks if current page is at the top
 
 // Scroll Event
-window.addEventListener('scroll', () => { 
+window.addEventListener('scroll', () => {
 
-    const currentScrollpos = window.pageYOffset; // current scroll position vertically
+  const currentScrollpos = window.pageYOffset; // current scroll position vertically
 
-    // Checks if it scrolled
-    if (currentScrollpos > 0) {
-        navContainer.classList.add('nav_scrolled');
-        isAtTop = false;
-    } else if (!isAtTop) {
-        navContainer.classList.remove('nav_scrolled');
-        isAtTop = true;
-    }
+  // Checks if it scrolled
+  if (currentScrollpos > 0) {
+    navContainer.classList.add('nav_scrolled');
+    isAtTop = false;
+  } else if (!isAtTop) {
+    navContainer.classList.remove('nav_scrolled');
+    isAtTop = true;
+  }
 });
 
 // To The Surface
@@ -25,16 +25,16 @@ const scrollToTop = document.getElementById('to_surfaceIndex')
 
 // Add Click Event on To The Surface
 scrollToTop.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-    });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
 
 const Seemore = document.getElementById("SeeMore");
 
 Seemore.addEventListener('click', function () {
-    window.location.href = 'news.html';
+  window.location.href = 'news.html';
 });
 
 
@@ -99,13 +99,13 @@ function ArrowUpdate() {
 
   if (currentIndex === 0) {
     ArrowLeft.src = 'images/arrowLeft_black.png'; // Black since index on Left is 0
-    ArrowRight.src = 'images/arrow_right.png'; 
+    ArrowRight.src = 'images/arrow_right.png';
   } else if (currentIndex + itemsDisplay >= items.length) {
-    ArrowLeft.src = 'images/arrow_left.png'; 
+    ArrowLeft.src = 'images/arrow_left.png';
     ArrowRight.src = 'images/arrowRight_black.png'; // Black since index on Right is 0
   } else {
-    ArrowLeft.src = 'images/arrow_left.png'; 
-    ArrowRight.src = 'images/arrow_right.png'; 
+    ArrowLeft.src = 'images/arrow_left.png';
+    ArrowRight.src = 'images/arrow_right.png';
   }
 }
 
@@ -139,3 +139,34 @@ ArrowLeft.addEventListener('click', function () {
     UpdateItemDisplay();
   }
 });
+
+// List of keywords and corresponding section IDs
+const keywords = {
+  "WORLDS 2023": "WORLDS2023",
+  "What's Happening": "WhatsHappening",
+  "GAMES": "GAMES",
+  "Esports": "Esports",
+  "Riot Forge": "RiotForge",
+  "We're hiring!": "Werehiring"
+};
+
+const searchBox = document.querySelector(".search_box");
+const searchIcon = document.querySelector(".search_icon");
+
+searchIcon.addEventListener("click", function () {
+  const keyword = searchBox.value.trim();
+
+  if (keywords.hasOwnProperty(keyword)) {
+    // Scroll to the section with the matching keyword
+    const sectionId = keywords[keyword];
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  } else {
+    // Keyword not found, you can handle this case as needed
+    alert("Keyword not found");
+  }
+});
+
