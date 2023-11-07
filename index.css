@@ -351,6 +351,7 @@ body {
   height: 50px;
   width: 100%;
   margin-top: -50px;
+  margin-left: -20px;
   display: flex;
   justify-content: end;
 }
@@ -1382,7 +1383,7 @@ ul.left li:hover {
   }
   .news_container > .newsHeadline_container {
     font-size: 1.5rem;
-    width: 337px;
+    width: 500px;
     margin: 30px auto 0 auto;
   }
   .news_container > .newsbox_container {
@@ -1401,6 +1402,9 @@ ul.left li:hover {
   .whats_happening > .news_today > .news_title {
     letter-spacing: 3px;
     width: 550px;
+  }
+  .news_container > .seeMore {
+    margin-left: 80px;
   }
   .whats_happening > .news_today > .map_img {
     width: 530px;
@@ -1445,7 +1449,6 @@ ul.left li:hover {
   .games_container > .gameOption_container {
     flex-direction: column;
     margin-top: 20px;
-    justify-content: center;
   }
   .gameOption_container {
     margin: 0 auto;

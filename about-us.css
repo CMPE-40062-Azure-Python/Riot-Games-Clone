@@ -198,6 +198,7 @@ body {
   height: 22px;
   width: 22px;
   margin-left: -30px;
+  cursor: pointer;
 }
 .upper-right_nav > .signIn_container {
   padding: 0;

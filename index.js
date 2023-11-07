@@ -142,8 +142,8 @@ ArrowLeft.addEventListener("click", function () {
 const keywords = {
   "WORLDS 2023": "WORLDS2023",
   "What's Happening": "WhatsHappening",
-  "Our Values": "OurValues",
-  Esports: "Esports",
+  "Games": "GAMES",
+  "Esports": "Esports",
   "Riot Forge": "RiotForge",
   "We're hiring!": "Werehiring",
 };
@@ -151,20 +151,33 @@ const keywords = {
 const searchBox = document.querySelector(".search_box");
 const searchIcon = document.querySelector(".search_icon");
 
-searchIcon.addEventListener("click", function () {
-  const keyword = searchBox.value.trim();
-
-  if (keywords.hasOwnProperty(keyword)) {
-    // Scroll to the section with the matching keyword
-    const sectionId = keywords[keyword];
-    const section = document.getElementById(sectionId);
-
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  } else {
-    // Keyword not found, show the list of keywords to use
-    const keywordList = Object.keys(keywords).join(", ");
-    alert("Keyword not found. List of keywords to use: " + keywordList);
+searchIcon.addEventListener("click", searchByKeyword);
+searchBox.addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    searchByKeyword();
   }
 });
+
+function searchByKeyword() {
+  const inputKeyword = searchBox.value.trim().toUpperCase(); // Convert the input to uppercase
+
+  for (const key in keywords) {
+    if (keywords.hasOwnProperty(key)) {
+      if (key.toUpperCase() === inputKeyword) { // Convert the keyword to uppercase for case-insensitive matching
+        // Scroll to the section with the matching keyword
+        const sectionId = keywords[key];
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+          searchBox.value = ""; // Clear the search box
+          return; // Exit the loop after a match is found
+        }
+      }
+    }
+  }
+
+  // Keyword not found, show the list of keywords to use
+  const keywordList = Object.keys(keywords).join(", ");
+  alert("Keyword not found. List of keywords to use: " + keywordList);
+}
